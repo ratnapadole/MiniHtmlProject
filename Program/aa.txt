@@ -1,0 +1,101 @@
+core java 
+constructor
+oops concepts
+String 
+packege
+variable
+wrapper class
+IO steam-seriable
+this ,super keywords
+inner methods call
+has -a ,is-a inheriance
+instance ,static block
+instanceof operator
+inner class
+cursor
+Exception Handling
+collection
+multithreading
+
+JAVA 1.8 Concepts
+
+Lambda exp
+reference method
+Steam API
+Optional class
+
+
+
+
+
+
+public class wel {
+
+    public static void main(String args[]){
+        System.out.println("Print Welcome");
+        Employee e = new Employee(1,"Priya");
+        System.out.println(e.toString());
+    }
+}
+
+
+
+
+
+------------
+public class Employee {
+    private int  emp_id;
+    private String emp_name;
+
+    public Employee(int e_id, String e_name){
+        this.emp_id= e_id;
+        this.emp_name=e_name;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee " +
+                "emp_id=" + emp_id +
+                ", emp_name='" + emp_name + '\'' +
+                ' ';
+    }
+
+    public int getEmp_id() {
+        return emp_id;
+    }
+
+    public void setEmp_id(int emp_id) {
+        this.emp_id = emp_id;
+    }
+
+    public String getEmp_name() {
+        return emp_name;
+    }
+
+    public Employee(String emp_name) {
+        this.emp_name = emp_name;
+    }
+
+    public void setEmp_name(String emp_name) {
+        this.emp_name = emp_name;
+    }
+}
+
+
+
+----------
+
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Test {
+    public static void main(String arg[])
+    {
+        System.out.println("Print ABC");
+        List<Integer> list = Arrays.asList(1,2,3,4,5);
+        list.stream().skip(2).forEach(System.out::println);
+    }
+}
+
+-----------------
