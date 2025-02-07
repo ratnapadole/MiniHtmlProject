@@ -1,0 +1,1198 @@
+
+//HW
+15-5
+
+char c='4';
+
+String s="345";
+
+byte v=222;
+System.out.println("char value is= "+c);
+System.out.println("char value is= "+v);
+}
+
+
+
+//to declare byte data type its value is 220,print this value in sop .
+
+//to declare one local and instance variable ,print both variable in another method  i.e. m2 
+
+//to declare one String value and double value .print both value inside one m1() method.
+//read data type size
+//read keyword
+
+
+16-5
+//wap to check even and  odd no using ternary operator     //   
+
+// int a=4;
+
+String b= (a%2  == 0)  ? "even" : "odd";
+
+
+//wap to check two colorname is equals or not using ternary operator   
+
+String b= (a%2  == 0)  ? "even" : "odd";
+String a = (blue == green) ? "they are equal":"They are not equal";
+
+//read control statement
+
+
+17-5
+//wap to find out leap year using if else statement 
+
+//int a=2024;
+//if(a%4 == 0){
+sop(leap year)
+}
+//wap to check all nos with 35 no,if given no is greater than 35 give sop ....ex ..12,77,99,22   using if else ladder 
+int a=35;
+// if(35>12){sop(35 gr)}else if(35 > 77 ){}else if(35>99)
+
+
+int a=35;
+
+12,77,99,22
+
+if(a > 12){
+
+
+}else if(a>77){
+
+
+}else if(35>99){
+
+
+}else if(a>22){
+
+
+}else{
+
+
+}
+
+//wap to print 1   to 10 no using for  , for each loop
+i.e.1,2,3,4,5,6,7,8,9,10  
+// read while ,do while loop, break statement
+
+18-5
+
+//wap to execute for loop 5 times .if adhar no is match with given no then break execution of program.
+
+// long adharno =231245671234;
+
+//read comments
+
+
+
+class A{
+
+psvm(){
+
+long adharno []= {231245671234,224466781223,88642457885} ; 
+
+
+for(int a=0;a<=5;a++){
+
+if(adharno[a]  == 88642457885  ){
+break;
+
+}
+
+
+}
+
+}
+
+
+}
+
+
+
+
+20-5
+-------
+//wap to create default const,give simple sop statement this default const,,then call parameter method
+
+
+
+21-5
+
+//wap to create 4 class ,A,B,C,D...extends each other,
+access Class A variable in class D  and print that class A variable.
+
+
+// read Encapulation 
+
+class A{
+int a=44;
+m1();
+
+}
+
+class B extends A {
+
+}
+
+
+class C extends B{
+
+}
+
+class D extends C{
+
+
+}
+
+
+22-5
+
+//wap to  create class in that create 2 varable ,one is float,String   as private var,
+create getter and setter method, print both var and modify also tht var.
+
+// read type casting
+
+
+
+
+23-5
+final keyword ex
+
+//wap to create one class as final extends that class to another class
+
+//wap to create one final method ,try to override that method into another class
+//wap to create abstract method ,try to create obj of abstract class.
+
+
+24-5
+
+//wap to create static method  and call that static method from main method,print simple sop statement
+
+//read wrapper class
+
+
+
+27-5
+
+//convert double data type to Double value.i.e.  12.33   -autoboxing 
+//convert Double class to double data type.i.e.  12.33   -autoUnboxing 
+
+int a=22;
+Integer obj=Integer.valueOf(23);
+double to  Double 
+
+double a= 23.44d;
+
+
+Double 
+
+
+
+psvm(){
+
+
+int a=22;
+Integer obj =Integer.valueOf(a); 
+
+//double to  Double 
+
+double a= 23.44d;
+
+
+Double obj  = Double.valueOf(a);
+
+
+sop(obj);
+
+
+//Double to double data type
+
+
+Double obj =new Double(23.55d);
+
+double s= obj.doubleValue();
+
+
+sop(s);
+
+
+}
+
+
+//to declare char data type array ,first asign size of array,
+then asign same char value from 0 index to 4 ,print all no using for loop.
+
+int a[]= new int [5];
+
+a[1] =25;
+
+
+//to declare double data type array ,asign size of array,
+ then asign same double value from 0 index to 4,print all no using for loop.
+
+//to declare String data type array , asign size of array, 
+then asign same String value from 0 index to 4,print all no using for loop.
+
+
+//read array topic with ex. and syntax
+
+
+double a[]= new  double [5];
+
+a[0]= 12.44d;
+
+
+a[1]= (45.33);
+
+a[2]="aaa";
+
+
+
+28-5
+
+//Wap to declare String array with some values an print using foreach loop
+
+//Wap to declare double array with some values an print using foreach loop
+
+
+
+29-5
+
+//wap to print given String into uppercase.i.e ..a="java Test";
+
+//wap to find given string start with f char.i.e.   a=f.  given string is b="java"  and print result.
+//wap to exchange some string from another string..given string is
+ a="programming"  -->gra   -->replace  ---> ass
+
+//wap to declare a=34;   check with call by refences.  
+ (check instance var change or not using this keyword)
+
+class A{
+
+int a=34;
+
+static void m1(int a){
+
+
+this.a=67;
+}
+
+psvm(){
+m1();
+
+sop(a);//34     //67
+
+}
+
+}
+
+
+//read final ,abstract,this,super,static keyword--> Test
+
+
+30-5
+
+//read access modifier
+
+31-5
+
+//wap to create one interface,in that create 2 abstract method ,
+one var,print that variable in child class,call that method also 
+
+
+interface interfaceName {
+ abstract m1()
+
+final int a=55;
+
+}
+
+ex.
+
+interface A{
+ abstract void m1();
+abstract void m2();
+
+int a=66;
+
+}
+
+
+class B implements A{
+
+public void m1(){
+
+sop("this is m1 method");
+}
+
+
+public void m2(){
+
+sop("this is m2 method");
+}
+
+psvm(){
+B obj =new B();
+
+sop(obj.a);
+obj.m2();
+
+
+obj.m1();
+}
+
+
+}
+
+
+
+Output:
+
+66
+m2 
+m1
+
+
+
+
+
+//read abstract class and interface.
+//read package topic also
+
+
+1-6
+
+// wap to  create 2 interface ,in that 1 - 1  method in both interface,
+in child class call both method and print simple statement.
+
+
+//wap to create one interface ,in that 2 method create,ine variable ,
+print that variable and call method.
+
+//wap to create one package as p1,in that create one class in that class ceate one
+ method and call that method,
+print simple statement
+
+// wap to create another package as p2,in that create one variable,print that variable
+
+// write down how to compile package program.write syntax and ex.
+
+// write down how to execute package program,write syntax and ex.
+
+
+//read about package topic
+
+
+
+3-6
+//read Exception Handling topic,try,catch,finally,throw throws
+//wap to create one package ,in that one private variable ,
+print that var in same class.
+
+package p1;
+
+class A{
+private int a=23;
+
+psvm(){
+
+
+A obj =new A();
+
+sop(obj.a);
+}
+
+}
+
+
+4-6
+//wap to create one method,in that method find even and odd no  
+ and use throws Keyword
+
+//wap to print 1  to 10 no using while loop  
+ and use try and catch block,finally also.
+
+//read Exception,String class,Array topic,Test
+
+
+5-6
+
+//
+//1wap to marge 2 given String.ex .a=abc   and b =java
+//2)wap to replace  some char with another char,,
+ex. java ---> a with e
+//3)wap to to find out length of given string ex. a=programming
+
+
+//4)wap to give int array .and 
+calculate sum of all int value into another variable.
+
+
+//5)wap to check duplicate char from given string  a=programming 
+  using simple for loop,,,,use try and catch block
+
+
+//6)wap to find out smallest no from given int array
+i.e.   int a={23,55,1,3,8,08,51,99,3}
+
+pari-1,2,3,6
+maitrya-1,2,3,4
+sampna-1,2,3,4
+
+
+
+7-6
+//wap to create one method in that find leap year, 
+
+ex.2024   - use try and catch block
+
+
+//wap to create one method and one parameterized constructor in
+ parent class and give simple sop statement in both and call method and const in child class .
+
+
+
+//wap to create one method in that find factorial no of  5. simple sop statement
+call that method  in child class .
+
+
+//wap to create one method in
+ parent class and give simple sop statement call method 
+from parameterized constructor of child class in child class .
+
+
+//read constuctor and polymorphism
+
+
+
+
+int s=77;
+A obj = new A(s);
+
+
+
+A(int s){
+
+}
+
+
+//wap to create default and parameterized constuctor ,in defult const  find e char in given
+  String.i.e.  a="java"   and  in  parameter const print same string using for loop.
+
+
+8-6
+
+//wap to create default const and one method give simple statement, and call  that method 
+ from default const.
+
+//wap to create one method,in that method wap for febonacci series .
+
+//read polymorphism and enapsulation,Test 
+
+
+
+
+
+
+10-6
+
+//wap to create 2 method with same method name,
+its have different parameter,in 1st method find smallest no from 2 given no.
+2 method find lagest no from given no.
+
+
+//wap to create one method with same method name,(m1(int a,int b) )
+its have same parameter in both class ,but in 1st class calculate addition of 2 nos 
+2 class calculate multiplication of 2 nos.
+print result.
+
+
+//read encapsulation,Test
+
+// wap to  create one class ,in that declare 2 variable as private  int ,double ,
+  get value of that variable  
+ print value,to update new value.
+
+
+// wap to  create one class ,in that declare 1 variable as private  String,
+  get value of that variable and to 
+check given string value start or not with e char..   given string is a="java"
+
+
+11-6
+
+// wap to  create one class ,in that declare 1 variable as private  String,
+  get value of that variable and to 
+check given string value end or not with e char..   given string is a="java"
+
+// wap to  create one class ,in that declare 1 variable as private  float
+  get value of that variable and find out given value is even or odd.
+
+
+class A{
+private float a=12.3f;
+
+public float getA(){
+return a;
+}
+
+public void setA(int a){
+this.a=a;
+}
+
+psvm(){
+
+A obj =new A();
+
+if(obj.getA() %2 ==0   ){
+sop("even no")
+}else{
+sop("odd")
+}
+
+}
+
+}
+
+//read type Casting topic and wrapper class,Test
+
+// wap to declare  byte data type its convert value  into double data type
+
+byte --double
+ byte a=34;
+
+// wap to declare  float data type its convert value  into long data type
+
+float--long
+ float a=32.14f;
+
+
+//wap to convert String to double data type value.
+using wrapper class method
+ex. String a="12";
+use parse method
+
+
+
+//wap to convert String to integer data type value.
+using wrapper class method
+ex. String a="12";
+use parse method
+ then  compare that no  with other no  and find smallest no.
+
+
+
+12-6
+
+//wap to convert String to short data type value.
+using wrapper class method
+ex. String a="12";
+use parse method
+ then  compare that no  with other no  and check both no is equals or not.
+
+
+/read Control statement
+for loop
+if else condition
+switch case
+break,continue statement,,,   Test only on program ,
+
+
+
+//wap to give 2 nos ...i.e.  a=34 b=77   then swap this no without 3rd variable.  
+
+//wap to declare String array with some String value, print all values using do while loop.
+
+//wap to find out palindrome  or not given String.
+i.e. a="java" use while loop.
+
+
+
+13-6
+
+//wap to find out given year is leap year or not using ternary operator.
+
+//read inheritance and constructor
+
+
+14-6
+
+//wap to create interface in that create 2 method,implement that method in child class
+
+
+15-6
+
+//wap to create one method using throws keyword,and in that method 
+check even and odd no use ternary operator.
+
+
+20-6
+
+
+//wap to set new thread name  and print that thread name using thread class
+//wap to get priority using thread class.
+
+
+22-6
+
+//wap to set new thread name  and print that thread name using thread class
+//wap to get priority using thread class.
+//wap to print simple statement after that goto sleep mode for some time then again 
+print therad name. in run method.
+
+
+24-6
+
+//wap  to create class extends Thread class get thread name  and print
+ that thread name and set new thread name  this all do in run method.
+
+//wap  to create class extends Thread class get thread name  after that call sleep method pause for some
+ time give 2000 (2 sec) after that print priority of that thread.  this all do in run method.
+
+
+
+class Test extends Thread{
+
+psvm(){
+Test obj = new Test();
+obj.start();
+}
+
+public void run(){
+
+sop("Thread name"+Thread.currentThread().getName()  );
+
+Thread.currentThread().setName("TH-1"); ///Thread-0
+sop("Thread name"+Thread.currentThread().getName()  );
+
+
+Thread.currentThread().sleep(2000);
+
+sop("Thread Priority"+Thread.currentThread().getPriority()  );
+
+}
+}
+
+//wap  to create class extends Thread class get thread name  
+after that caluculate multiplecation of 2 nos .this all do in run method.
+
+
+25-6
+
+//wap to use implements keyword ,to perform find out even or odd no ,in run method.
+
+public static void main(String args[]){
+IName obj= new IName();
+
+Thread t = new Thread(obj);
+t.start();
+}
+
+
+//wap  to create class extends Thread class set new thread name  
+after that caluculate addition of 2 nos .print Thread name also..this all do in run method. 
+this do using extends keyword
+
+//read MultiThreading topic
+
+
+26-6
+
+
+//wap to create 2 process ,in 1st print no from 45 to 50  and 2nd print no from 80 to 90 
+.it execute both process parallelly.
+
+
+//read life cycle of thread class, all multithreading topic.
+
+
+
+27-6
+
+//wap to create 2 Thread using implements keyword ,in 1st print no from 6 to 12 and 2nd print
+// no from 22 to 32.it execute both process parallelly.
+
+//read life cycle of thread class, all multithreading topic.
+
+
+28-6
+
+//wap to create one class extends Thread class.in that create 3 method with synchronized keyword.
+call all that method one by one.
+
+//wap to create 2 Thread using implements keyword ,in 1 st process create one method as synchronized
+,in 2nd create one normal method.
+
+//read synchronized topic
+
+
+
+
+1-7
+//wap to create one class extends Thread class.in that create 
+ synchronized block,in that give int array and print all arrays value using for loop
+
+//read synchronized topic
+
+
+2-7
+
+//wap to create one class extends Thread class ,to set one process as daemon,in that
+ give simple one string a="java" ,find out length of this string,print length size
+ (run process in background).other process as normal.
+
+//read Daemon Thread 
+
+
+
+3-7
+
+//wap to create one class extends Thread class ,find out duplicate no from int array,use join() method
+//read constructor topic
+//wap to create two class extends Thread class ,1st process print no from 35 to 55 
+,2nd print no from 70 to 80 ,use join() method
+
+//wap to create two class extends Thread class ,1st process print no from 35 to 55 
+,2nd print no from 70 to 80 ,use join() method
+
+class A extends Thread{
+
+p run(){
+
+for(){
+sop(i);
+}
+
+}
+
+}
+
+
+class B extends Thread{
+p run(){
+
+for(){
+sop(i);
+}
+}
+
+psvm(){
+
+A obj =new A();
+B obj1 =new B();
+
+
+
+obj.start();
+obj1.start();
+
+try{
+obj.join();
+}catch(){
+
+}
+
+}
+
+
+4-7
+
+//wap to create new file using io package.(file name = "Abc.excel")
+
+//wap to create new Folder using io package.(folder name="java")
+
+//wap to  print String array value from String array.this code write in try block
+
+5-7
+
+//wap to create one methos as m1,in that find out lagest no from give value,a=22  b=76,,use throws keyword
+
+//wap to crate one method,in that find out positive or negative value fro give no a= -55,
+,use throw keyword
+
+
+
+8-7
+
+//wap to create 2 class,in 1st class create one variable,2nd class print that variable.
+
+
+class A{
+int a=45;
+}
+
+class B  extends A {
+
+psvm(){
+
+B obj =new B();
+sop(obj.a);
+}
+}
+
+
+9-7
+
+//read types of variable
+//read loop statement,with syntax of for,while, do while  loop.
+
+
+
+10-7
+
+//Array topic
+/wap to  declare int array with value,find out which no is even from that array.
+
+
+
+11-7
+
+//wap to store value,after that remove value from index of 3 no,print total count of obj value.
+
+
+//wap to store value into ArrayList class
+
+import java.util.*;
+class A{
+psvm(){
+
+ArrayList obj =new ArrayList();
+obj.add(23);
+obj.add("sun");
+
+
+sop(obj);
+
+}
+
+}
+
+//read collection topic
+
+
+13-7
+
+
+//wap to create one float array , print that all value using forEach loop
+
+//wap to create int array,find out which no is greatest no from that array.print that no.
+
+
+
+
+int a[]={4,5,78,8,9,1,33};
+
+int max=0;
+
+for(int i=0 ; i,<a.length;i++){
+
+for(int j=i+1;j<a.length;j++){
+
+	if(max > a[j]){
+		max= a[j];
+	}
+}
+
+
+}
+
+sop(max )
+
+
+
+16-7
+
+//wap create default const,prameterized const,print both  simple statement.
+call parameterized const from default const.
+
+
+
+23-7
+
+//wap to store value into ArrayList class
+//wap to create 2 class,to access Parent class propertie using Upcasting.
+//A class ,B class  ---->Upcastinng  --->  A obj= new B();
+
+
+24-7
+
+//wap to create LinkedList class (Float) Generic type object,store  float type value,
+print object.
+
+
+
+25-7
+
+//wap to create LinkedHashSet class object ,store value,
+print object.
+
+
+//wap to create TreeSet class object ,store float type value,
+print object.
+
+
+26-7
+
+//wap to create HashSet objcet,store value,print value using for loop
+
+//wap to create ArrayList objcet,store value,print value using forEach loop
+
+
+29-7
+
+//wap to create HashSet objcet,store value,print value using while loop,iterator,hasNext() method
+
+
+
+-purpose
+feature-credit,deposit,
+-advntage
+-
+
+
+31-7
+
+//wap to create LinkedHashMap  object,insert data into object(using put method)
+//check size,remove one value from object,print only value from object(using getValue() )
+
+
+
+1-8
+
+//create one database as BloodBank;
+//create two table
+	//one is--Student-rollno,address,sname
+	//2nd is--Department--dept_no,Dept_name;
+-->create table Student (rollno int(23),address varchar(3331),st_name varchar(666)    );
+---> 
+
+
+0--00
+1--01
+2--10
+3--11
+25 4--
+
+2-8
+
+//create table,Student,Department,Book-->B_id,book_name
+//insert data into the all table-2 way-direct value,column name values
+insert into tableName values(12,"ABC",45)   ;
+insert into tableName (column name)   values(value,value,45,"eeee");
+
+
+//drop---table delete----one table drop-book  table
+/// drop table student;
+
+//rename table-department---Dept table
+//rename table oldtablename  to newtblename;
+
+
+//select all column from all table.
+//select one column from one table.
+select * from student;
+select columnname from student;
+
+//delete  and truncate query--table record delete
+
+//delete from student;
+//truncate table student;
+
+//delete record from 2 table using delete and truncate query.
+
+//update record from one table.
+  
+ex. update tablename set targetcolumn=value where columnname =value;
+
+
+3-8
+
+//write query for show data in descending order ,particular 2 records.
+//write query for show data only one column from table.
+
+5-8
+
+//write query for add one column to exits table
+//write query for delete one column to exits table
+//create one table with give to one column as primary key
+
+//find out record,its name is ankita and rollno is 3;
+//find out total salry of emp
+//find out min salary of emp.
+//find out how many emp presnet in table.(use count() method)
+
+
+
+6-8
+
+//find out record from range between 30 rollno to 40 rollno student
+
+//search record from table whose name is "ABC" using like query.
+//
+
+
+8-8
+
+//find out unique data from table use distinct keyword--any one column
+//find address from 2nd table using join.
+1st table-sid,sname
+2nd table-sid,address,adharno
+
+
+13-8
+
+//wap to create table with 2 column using java application.
+//wap to delete rollno =3  this student record delete using java application.
+
+
+
+14-8
+//wap to display student data . use ResultSet inteface 
+
+
+16-8
+
+//wap to insert data into DB,using java application
+//create one web page using html lang.create one heading,one paragraph
+//read below points
+mysql 
+-select
+-insert,update,delete,truncate,drop,alter 
+-agregate function
+-clouse-where,having ,group by,order by
+-between and,,like query
+
+-delete and truncate--only delete record ,not table structure
+-drop-all record and taable stucture deleted
+
+-drop  table tablename
+-truncate table tablename;
+-delete from tablename  where rollno=1;
+-update tablename set stname="sunil" where rollno =1;
+-alter table tablename add(columnname int (22));
+- select * from student order by rollno asc ;
+-select * from student limit 2;
+
+
+20-8
+
+//create web page using HTML lang,one paragraph, break line,draw horizontal line.
+
+
+21-8
+
+//create web page using HTML lang,create one order list of subject name(use <ol> tag)
+
+
+
+22-8
+
+//create one web page using html,create one form,in that enter name,enter surname,
+enter password ,and submit button use <input tag>   with create one video using video tag
+
+//redirect another page using <a> tag 
+
+
+23-8
+
+//create one wrb page,show one image,draw one table,stname,address
+
+
+4-9
+
+//wap to create two class,in 1st class ,declare one var,one method 
+that access var and method into another class
+
+
+5-9
+
+//wap to check given char from exist string,,ex a="java",find v char present or not
+//wap to print lower case value
+
+//create html page,to give style using internal css,to give font size=60.
+//create html page,to give style using Inline css,to give background color.
+
+
+7-9
+
+//create one html page with apply css selector
+
+
+9-9
+//create web page,in that create 2 feild,one ename,eaddress
+//create table in DB with 2 columns(srno,ename,eaddress)
+
+
+11-9
+
+//create web page,in that create 2 feild,one ename,eaddress
+//create table in DB with 2 columns(srno,ename,eaddress)
+
+
+14-9
+
+//write query for add new column in existing table
+//write query for delete 2 columns from existing table
+
+
+17-9
+
+
+//display video on web page 
+
+//draw table with header,  RollNo, Name
+
+rollno            Name
+1		 Anil
+2		Nitesh
+
+
+18-9
+
+//wap to print arrays value using for each loop
+
+
+28-10
+
+//wap to store value into ArrayList class
+//read collection topic
+
+
+
+19-11
+
+//wap to store value into HashSet class and print all values
+//wap to store value into LinkedHashMap  class  and print value using getKey()  ,getValue() method
+//read collection topic
+
+
+
+
+27-11
+
+//wap to find 88 no from given array,using binary search
+//int a[]={12,4,3,1,88,55,33};
+			
+//write down step for arrage given array,using bubble sort,selection sort
+//int a[]={12,4,3,1,88,55,33};
+			
+
+
+3-12
+
+//wap to create one folder,one file using File class(io concept)
+//wap to create one file and write some text data into that file using FileWriter class
+
+
+
+
+
+
+
+
+
+
+
+
+
+

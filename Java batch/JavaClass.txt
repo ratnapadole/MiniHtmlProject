@@ -1,0 +1,7321 @@
+15/5/2024
+===============
+
+variable
+==========
+
+-it is temp name to store value for sometime
+
+3 type of variable
+
+-local var
+-static var
+-global var     or   intance variable  
+
+
+
+-local
+-inside the method ,block,constructor
+
+
+-static var
+
+-inside the class but outside method,block,constuct.
+-its declare with static keyword
+-score whole class acess
+
+
+-instance variable     or global var
+
+-inside the class but outside method,block,constuct.
+-score whole class acess
+-
+
+
+
+
+DATA Type
+=============
+char,int short,long byte
+
+byte -1byte -8 bit-  -128 t0 127    //byte c=129;
+int- 2-byte -16bit
+float-4 byte- 32bit
+
+char-2byte-16bit
+
+
+String
+
+
+
+char c= '3';
+
+
+class A{
+
+static int result=77;
+int s=99;
+
+
+void m1(){
+
+int a=3;
+sop(A.result)
+sop(obj.result)
+
+}
+
+
+
+void m2(){
+
+
+sop(a);
+}
+
+
+
+{
+
+int b=34;
+
+}
+
+A(){
+
+int c=44;
+
+}
+}
+
+
+
+16-5-2024
+======================
+
+
+keywords
+==========
+
+-this keyword
+-super keyword
+
+
+
+-ths keyword
+-current class properties access within class
+
+
+class A{
+
+int a=45;
+void m1(){
+
+
+}
+
+
+void m2(){
+
+sop(this.a)
+var- this.a
+method- this.m1(35,"ABC");     this.m1();
+constructor- this()      this(23);
+}
+
+
+}
+
+-super keyword
+
+-to call parent class properties in child class
+
+
+class A{
+
+int a=45;
+
+void m1(){
+
+}
+
+
+A(){
+
+
+}
+
+
+}
+
+
+
+
+class B{
+
+
+
+super.a;
+
+super.m1(45,"abc");
+
+super();
+
+
+
+A(){
+
+}
+
+
+A(int a,String b){
+
+this();   or super();
+
+
+
+sop("aaaaa") 
+ int d=333;
+
+}
+
+
+
+
+B(){
+
+
+//to call A() constructor
+
+this.a;
+this.m1();
+
+this();
+this(34,"ABC");
+
+
+
+super.a;
+super.m1();
+super();
+super(12,'s');
+
+}
+
+
+
+Operator
+==========
+
+-its symbol to perform operation
+-ternary operator
+
+
+17-5-2024
+==========
+
+
+Control Statement
+=====================
+
+-to check condition using diff statement type
+
+-decision making statement
+-loop statement
+-jump  statement-   i.e.break,continue
+
+
+
+ a> b      
+
+
+syntax
+
+
+if(condition){
+
+}
+
+
+
+ex. 
+
+if(12 %2 == 0){
+
+}
+
+
+
+if else
+
+
+if(a>b){
+
+sop("a is gtrater no")
+}else{
+sop(b is gtrater no)
+
+}
+
+
+if else if  statement  (if else ladder)
+
+
+syntax:
+
+if(condition){
+
+
+}else if(condition){
+
+}else if(condition) {
+
+
+}else{
+
+}
+
+-------------------
+if (){
+
+if(){
+
+}else{
+
+}
+
+
+
+}else{
+
+
+}
+
+
+-------------------------
+switch statement
+
+
+syntax:
+
+
+
+switch(expression){
+
+case value :  sop()  break;
+case value : sop()  break;
+
+
+default : sop() break;
+}
+
+
+
+
+exp  = value  ---true   
+
+
+---------------
+loop statement
+
+-for loop
+-for each loop
+-while loop
+-do while loop
+
+
+
+for(int i=0;i<=5;i++){ //10 9 8...... i--  i=1
+sop();
+}
+
+int a[] ={ 12,66,55,88,99,81,44  };
+String b[]={"qqq","aaaa"};
+syntax:
+
+for(data type temp var : existing variable){
+
+
+}
+
+for(int i : a   ){  12= i,i=66   i==55
+	sop(i);
+}
+
+
+18-5-2024
+============
+
+------------------------
+while ,do while loop
+
+syntax:
+
+while(condition){
+
+i++;
+}
+
+ex.
+int i=1;
+
+//1  to 10 print 
+
+while(i <= 10){     // i < 35   --->34,35
+
+sop(i)
+i++;
+
+}
+
+
+--------------
+
+while(condition){
+i<=10
+sop()
+
+}
+
+syntax:do  while
+
+int i=1;
+do{
+sop("ABC"+i);      //0   1 2  3
+i++;
+}while(condition);i<=10
+
+
+
+1   t0 10  using do while loop
+
+
+-------------
+
+break statement
+
+-to stop execution flow   after some condition.
+
+syntax:
+
+if(a==4){
+break;
+}
+
+ex..
+for(){
+
+if(colorname == "green"){
+  break;
+
+
+}
+
+}
+
+
+-------------
+continue statement
+
+-to skip value 
+
+
+if(a==2){
+continue;
+}
+
+
+
+20-5-2024
+========================
+
+Comments
+-----------
+
+
+-to give information
+
+doc-  /**  info  */   
+multiple line-      /*   dvfsdfsdf  sfasd adfasfasf
+asdfasfas 
+asdadasdsDA
+ ADFASFAS
+
+SFASF
+
+*/
+single line-    //info  //
+
+//ADDITION OF TWO NOS
+
+
+
+--------------------------
+Constructor
+---------
+
+type of constructor 
+-default const
+-paramerized const
+
+
+
+class name  should be same-constructor 
+
+int m1(){
+
+return 23;
+}
+
+
+class name(){
+
+
+}
+
+ex A()
+{
+
+
+}
+
+
+//wap to create prameterized const then call default const from parameterzed const
+
+
+
+
+class A{
+
+
+psvm(){
+
+A obj =new  A("ABC");
+A obj1 =new A();
+
+}
+
+
+A(String a){
+this();
+int s=55;
+super(s);
+}
+
+
+void m2(int a,String b){
+
+}
+
+
+A(){
+
+}
+
+}
+
+----------
+consturctor overloading
+
+
+overloadding -same method name,but diff parameters,diff type 
+overriding-same method name,same parameters
+
+
+method vs const
+
+
+A()
+
+A(int a)
+
+
+A(String b)
+
+void m1(int a){
+
+
+}
+
+
+
+compile-  javac classname.java
+javac filename.java -----> CORRECT
+
+execution-java classname  ----> correct 
+
+
+
+
+//wap 
+
+
+21-5-2024
+=============
+
+-Inheritance
+-polymorphism
+
+
+method override - multiple class need
+
+
+method overloadding-multiple class not need
+
+
+22-5-2024
+==========
+Encapsulation
+
+
+-collections of private variable,
+-to use get and set method
+-its use for sequrity purpose.
+
+byte -1 byte-8 bit
+char - 2byte - 16 bit
+
+ex.
+private String a="ABC";
+
+private int c;
+
+
+public int getNum(){
+ return num;
+
+}
+
+
+public void setA(String a){
+
+this.a= a;
+
+}
+
+A obj =new A();
+obj.getA();
+
+obj.setA("ABC" );
+
+
+23-5-2024
+================
+
+type casting
+
+Implicit
+
+small - big data type
+
+
+ex int  to float data type 
+
+int a=22;
+
+float b= a ;
+
+
+
+
+byte-short-int-long-float-double
+
+
+explicit
+
+big -small data type 
+
+ex.  double to int
+
+
+
+double a =223.88;
+
+float  b =  (float) a;  // b=223
+
+-----------------------------------------
+
+final,abstract,static- keyword  
+
+this,super keyword   
+
+final keyword-class,method,variable
+
+final int a=23;-->this value can not change
+
+a=66;
+
+
+final class-can not be extends
+
+final public class A
+
+}
+
+final void m1(){
+
+}
+
+
+m2(){
+
+}
+
+access modifier -public ,private,protected
+
+
+abstract keyword-class ,method 
+
+
+abstract void m1();
+
+
+class B extends A
+{
+
+void m1(){
+
+sop()
+a+b;
+}
+
+abstract class A{
+int a=22;
+void m1(){
+
+}
+
+}
+
+-------------------------
+24-5-2024
+=============
+
+static keyword - method,variable,class   
+
+static var- static method ,static block   --void m1(){ 
+
+
+
+ex 
+
+
+class A{
+
+static int a=22;
+
+
+void m1(){
+
+A.var
+A.a;
+
+
+sop(A.a);
+ 
+
+}
+
+
+static method-
+void m1(){
+
+
+}
+
+psvm()
+{
+m1();
+
+}
+
+
+
+
+}
+
+
+
+static int v =11;
+
+void m2(){
+
+sop( obj.v   )
+
+sop(v)
+int z=a+v;
+
+sop(A.v)
+
+}
+
+
+static int a=33;
+
+public static void main(String [] args)
+
+
+---
+27-5-2024
+=============
+
+
+wrapper class 
+------------
+
+-convert primitive data type to object data type
+
+int ,float -
+
+colletion-
+
+
+ex.
+
+
+
+int to  Integer 
+
+int  to
+
+
+
+int a=20;  
+Integer i=Integer.valueOf(a);
+
+parseInt()-to convert string data into int data type.
+
+parseFloat();
+
+
+
+Integer obj = new Integer(23);
+
+int b=obj.intValue();
+
+Float -class level   ------>float data type -primitive data type
+
+
+primitive data type-Primitive data types specify the size and type of variable values. 
+ 
+There are 8 Primitive data types in Java 
+– Boolean, char, byte, int, short, long, float, and double.
+
+object data type-
+
+Integer obj =new Integer(12);
+
+
+
+ex.int ,float,double data type .ex  ArrayList  obj---> (12,44,12.55,5.99)
+
+
+ex.  int a[]={34,55,67,88};//only one data type values
+
+ArrayList obj= new ArrayList();
+
+obj.add(12);
+
+obj.add("aaa");
+
+obj.add(44.56);
+
+
+
+
+
+
+-type 
+
+-autoboxing- convert primitive data type to object data type 
+-autoUnboxing -convert object data type to primitive data type
+
+Integer obj =new Integer();
+
+Float obj =new Float(34.68);//class level
+
+float b=obj.floatValue();
+
+
+//ex.
+
+
+
+void m1(){
+
+}
+
+create obj-obj.m1();
+
+A(){
+
+}
+
+create obj 
+
+
+
+-------------
+Array
+---
+-to store data in grp format
+-same data type
+- read value from 0 index from array
+
+
+type
+-one    or single dimensional array-  int a[]  ={12,33,4,5};
+-multi dimensional array-- int a[] [] ={ {23,56,6,7},{67,89,01} };
+
+syntax-
+
+data type  array name [] = {   };
+data type [] arrasy name = {   };
+ex.  int a[]={12,33,443};
+
+-size declare
+int a[]= new int [5];
+
+a[1] =25;
+
+a[0]= 12;
+
+
+String s[]={"aaa","sss"};
+
+--------------------------------
+28-5-2024
+==========
+
+Array
+
+int a[] ={23,44,4,5,644,45,68};
+for(int i=0;i< a.length;i++ ){
+
+sop(a[i])
+}
+
+
+//hw
+----------------
+String Class
+=============
+
+-to store String value
+
+-
+
+-literal type or directly assign value to variable
+-new Keyword
+
+
+String a="ABC";
+
+String obj = new String("ABC");
+
+String b="nn";
+
+heap meory
+string constant pool-its for temp store
+
+String a[]={"aa","sss"};
+
+
+
+
+methods 
+syntax-
+variable.method()
+
+-toUpperCase()-to convert String value to Upper case
+-toLowerCase()-to
+-concat()- a.concat(b)
+-charAt('c')
+-indexOf(0)
+-contains("ABC")
+-replace()
+-substring()
+-trim()-remove start and end blank space from given string --ex. String a=" abc xyz MNL ";   //abc xyz MNL
+-length()
+-valueOf()
+-startswith('c')-->true  or false
+-endswith('s')->true  or false 
+
+int a=23;
+
+String v=String.valueOf(a);
+
+
+
+-reverse()
+
+
+String    -Immutable 
+StringBuilder -new -Mutable class
+StringBuffer-new  -mutable class
+
+
+StringBuffer obj =new StringBuffer("ABC");
+
+String a=new String("ABC");-----> 
+
+a="XYZ"
+
+
+
+--------------------------------------
+
+29-5-2024
+==========
+String Class  Ex.
+
+Call By value-->its not change value after operation
+call by reference-->its change value after operation
+
+
+
+int a=45;    //  a=12
+
+
+
+void m1(A z ){//66
+
+
+z.a=34;
+
+
+}
+
+
+
+
+
+sop(a);  ///a=66
+
+
+
+
+psvm(){
+
+obj.m1(A as);
+
+}
+
+
+------------------------------
+30-5-2024
+============
+
+Test
+
+super keyword
+-----
+
+
+variable 
+method 
+constuctor    
+
+
+
+--------------
+abstract keyword
+
+-method
+-class
+
+--------
+static keyword
+-----
+-variable 
+-method
+-nested class
+
+
+----------------
+this keyword
+
+-variable
+-method
+-constructor
+
+-------------
+final kyword
+
+-variable 
+-method
+-class
+
+
+----------------------------
+31-5-2024
+==========
+Access modifier
+class,method,variable,constuctor
+
+
+public int a=44;
+
+public-whole class,within package,
+
+p1  -folder 
+p2 -folder  
+
+
+protected 
+class A{
+
+
+protected int a=33;
+
+
+}
+
+
+class B extends {
+
+sop(a)
+
+}
+
+
+class C{
+
+
+
+}
+
+
+
+
+private
+
+private int a=57;
+
+class A{
+private int a=11;
+
+
+}
+
+
+public int get(){
+ return 12;
+
+}
+
+
+public void setA(int a){
+
+this.a=a;
+}
+
+
+
+
+default
+
+default int a=22;
+
+
+------------
+
+ex.wap to create 2 class ,in that create public  one variable and public one method  
+ and that var,method call to another class(print).
+
+
+----------
+Abstraction
+
+-hide data
+
+---->abstract  class is does not create object
+A obj =new A();
+
+
+abstract class A{
+abstract void m1();
+
+
+
+void m2(){
+
+
+}
+
+}
+
+class B extends A{
+
+void m1(){
+
+sop("m1 method");
+}
+
+}
+
+
+
+interface
+
+-interface is kyword
+-its collection of abstract method and final var
+
+
+interface interface name
+
+
+
+ex.
+
+interface A
+
+{
+
+void m1();
+
+int a=33;
+}
+
+
+interface i1{
+
+
+}
+
+
+
+class B implements A ,i1  {
+
+public void m1(){
+sop()
+
+}
+
+
+
+psvm(){
+
+B obj =new B();
+  obj.m1();
+obj.a;
+}
+
+
+}
+
+multiple Inhe
+
+2 parent
+1 child
+
+
+Hearchical
+1 parent 
+2 or more child class
+
+
+
+abstract class
+
+-
+
+abstract class A{
+abstract void m1();
+
+int a=22;
+
+}
+
+class B extends A{
+
+}
+
+
+
+
+
+interface i1{
+
+abstract void m1();
+}
+
+
+
+class B implements i1{
+
+public void m1(){
+
+
+}
+
+psvm(){
+obj.m1();
+}
+
+}
+---------------------------------
+1-6-2024
+=========
+
+package
+--------
+
+-to collect  multiple classes ,sub classes,interface.
+
+-two  types of package 
+
+-predefined package
+-user defined package
+
+java.lang
+java.util
+java.io
+java.util.Scanner
+
+
+-user defined package
+
+import java.util;
+
+
+import java.util.Scanner;
+
+
+
+import java.util.*;
+
+---------------
+
+syntax:
+
+package package name;
+
+package p1;
+
+
+package util;
+
+
+class A{
+
+
+}
+--
+
+package compile adn execute :
+javac filename.java
+java classname
+
+
+javac -d . fileName.java  
+javac -d . A.java
+
+java  p1.A
+
+
+javac A.java
+
+
+A.java
+A.class
+
+javac -d . A.java
+
+-to resolve name conflicts
+-to collect multiple classses and interface for performing the task.
+
+
+--------------------------------------
+3-6-2024
+=========
+Package ex
+Introduction of Exception Handlinterface vs abstract
+
+Interface                        		 Abstract class
+
+collect only abstract method             	collect both abstract and normal method also
+use implements keyword 				use extends keyword 
+to use default ,private,static keyword 		to use all keyword
+ex.interface i1{				ex.abstract class A{
+}						}
+
+->
+interface i1{
+
+default void m1(){
+   
+}	
+
+static void m2(){
+//logic
+
+}
+
+private void m3(){
+
+}
+}
+
+class B implements A{
+
+public void m1(){
+//
+}
+
+}
+-------------------------------------------------
+4-6-2024
+===========
+Exception Handling
+
+
+
+String a=null;
+
+a.length();
+
+try-
+
+
+int a[]={12,33,33];
+
+sop(a[6]);
+
+
+catch -msg
+
+finally-
+
+
+
+
+try{
+int a=23;
+
+}catch(NullPointerException ex ){
+sop();
+
+
+}catch(Exception a){
+
+sop()
+}
+}finally{
+sop()
+
+}
+
+
+
+-------------------------------------------
+
+try(){
+
+
+
+String ar[] = {"12","11","14","15"};
+sop(ar[4]);//
+
+
+}catch(Exception ar){
+sop();
+}
+finally(){
+System.out.println("This is the final block");
+
+
+}
+
+
+
+---------
+
+
+throws   nd   throw
+
+
+
+
+throws --
+
+void m1(int s)   throws Exception  {
+int a=33;
+
+}
+
+
+void m2()
+{
+
+
+try {
+
+
+}catch{
+
+
+}
+
+
+
+}
+
+
+throw--  to give user defined Exception .
+
+
+void m3(){
+
+
+String ar[] = {"12","11","14","15"};
+sop(ar[4]);//
+
+throw new EXException("in this  line error,ArrayIndex ");
+
+}
+
+
+class EXException{
+
+}
+
+
+-----------------------------------------
+5-6-2024    && 6-6-2024
+=========
+
+Test on String,Array,Exception Handling
+int temp ,a,b;
+
+temp =a;
+a=b;
+b=temp;
+
+
+String a="java";
+String b= ="program";
+
+1) sop(a.concat(b)  ); // 
+
+Output:   javaprogram
+
+
+2)a.replace("a","e");//
+Output: jeve    
+
+3)a.length();
+
+Output : 4
+
+4)
+int a[]={1,2,3,4,5};
+
+int sum;//3
+
+for(int i= 0;i<a.length;i++){
+ sum = sum + a[i];//0 + 1=1      //1+2=3
+
+//sum += a[i];
+
+}
+
+sop(sum);
+
+5)
+
+class A{
+psvm(String arg[]){
+try{
+
+
+String  a="programming";
+
+for(int i=0 ;i<){
+
+} 
+
+
+
+}catch(Exception ex){
+sop("this is catch block");
+
+}finally{
+sop("this is finally block");
+
+}
+
+
+}
+
+}
+
+
+6)find smallest no from given array.
+
+int a[]={23,55,1,3,8,08,51,99,3};
+
+int b =a[0];
+
+1)
+-------
+for(int i=0;i<a.length;i++){
+
+if(a[i] <  b ){// 23 < 23    //55 < 23
+b = a[i];
+
+
+}
+
+}
+
+
+sop(b)
+
+----------
+2)
+int a[]={23,55,1,3,8,88,51,99,3};
+
+for(int i=0;i<a.length;i++){//i=23
+
+for(int j=i+1 ; j< a.length; j++  ){  //j=55
+
+if(a[i]  < a[j]){
+sop(a[i]);
+
+}
+
+}
+
+}
+
+------------------------------------------------------
+7-6-2024
+============
+
+Test on Constructor And Inheritance
+
+
+class A{
+
+void m1(){
+sop("this m1 method");
+
+}
+
+public A(int a){
+
+sop("this is parameterized constructor"+ a);
+}
+
+
+class B  extends A {
+
+psvm(){
+
+B obj =new B(23);
+
+obj.m1();
+}
+
+}
+
+
+--------------------------------------------
+8-6-2024
+==========
+class  A{
+
+psvm(){
+
+A obj =new A();
+ A obj =new A("java");
+}
+
+A(){
+
+
+String a= "java";
+sop(a.contains("e")  );
+
+}
+
+
+
+A(String b){
+
+for(int i=0; i<=b.length() ; i++){
+sop(b)
+
+sop(b.charAt(i) )
+}
+
+class A(parameter){
+
+
+}
+
+
+ex.
+
+
+Fact(int a){
+
+
+}
+
+Fact(){
+
+
+}
+
+
+Fact obj =new Fact();
+
+
+Fact Obj =new Fact(45,"Java");
+}
+
+}
+
+------------------------------------
+10-6-2024
+==========
+
+Fibonacci Series
+------------------
+Ex.  Series  :-   0,1,1,2,3,5,8,13,21
+
+
+
+additiopn of 2 nos  -its next no of series
+
+0,1,1,2,3,5.........
+
+class A{
+
+psvm(){
+
+sop("enter the no");
+
+int n=10;
+
+int a=0;
+int b=1;
+
+sop(a+", "+b)
+
+for(int i=0;i<=n; i++){
+
+int c=a+b;
+sop(c)
+
+//0,1,1,2,
+
+a=b;
+b=c;
+}
+
+
+}
+
+}
+------------------------------------
+11-6-2024
+===========
+class A{
+
+private String a="java";
+
+public String getA(){
+ return a;
+}
+
+public void setA(int a){
+
+this.a =a;
+}
+
+psvm(){
+A obj=
+// java    --->e 
+
+sop(obj.getA().startswith("e")  );
+
+//false 
+
+
+}
+
+}
+---------------------
+class A{
+
+private String a="java";
+
+public String getA(){
+ return a;
+}
+
+public void setA(int a){
+
+this.a =a;
+}
+
+psvm(){
+A obj=
+// java    --->e 
+
+sop(obj.getA().endswith("e")  );
+
+//false 
+
+
+}
+
+}
+-------------------
+12-6-2024
+=============
+
+Type Casting -Test
+
+-Implicit type Casting
+-Explicit Data Type Casting
+
+
+byte --> short  --> int -->long -->float  ---> double 
+
+
+int a=44;
+
+ float b =a;
+
+
+float a=34.55;
+
+int b= (int)a;
+
+
+
+short s = (short)b;
+
+
+(data type) variable;
+
+double z=34.44;
+
+
+int h =(int) z;
+
+---
+wrapper class
+
+
+
+int ,float 
+
+String a="12";
+
+parseInt
+
+parseFloat();
+
+Integer 
+
+
+
+-----------------------
+13-6-2024
+===========
+
+String a[]={"red","white","gray"};
+int i=0;
+
+do{
+ sop(a[i])
+i++;
+}while(i<a.length);
+
+
+String a="java"
+
+int i=0;
+
+while(i< a.length()){
+
+sop(a.charAt(i) );
+
+i++;
+}
+
+
+
+String a="java"   //avaj    // 
+
+String b="";
+
+i=4   // i=3     i=3    3  >= 0  2-1    i=2
+for(int i=a.length()-1 ; i>= 0 ;i--){
+
+b= b + a.charAt(i);  //b=a       b=a+v    b= av  
+}
+
+
+if( a == b){
+
+sop("this is palindrome no")
+} else{
+ sop("not palindrome no ")
+}
+
+-------------------------
+14-6-2024
+==========
+
+Interface 
+----------
+
+-its collection of abstract method and final variable
+-use implements keyword  
+
+
+syntax:
+
+interface interface name (I1) {
+
+void m1();
+int a=22;
+
+void m2(int a,String b);
+}
+
+
+interface I2{
+void m1();
+
+}
+
+class A implements I1,I2{
+
+public void m1(){
+sop()
+int c = a=b;
+sop(c)
+}
+public void m2(int z,String y){
+
+}
+
+psvm(){
+A obj= new A();
+
+obj.m1();
+
+sop(obj.a);
+
+obj.m2(32,"ABC");
+}
+
+}
+
+
+
+//wap to create interface in that create 2 method,implement that method in child class
+
+interface IName
+{
+void m1();
+void m2();
+
+}
+
+class A implements IName{
+
+public void m1(){
+sop("this is m1 method")
+}
+
+
+
+public void m2(){
+sop("this is m2 method")
+}
+
+
+psvm(){
+
+A obj =new A();
+
+obj.m1();
+obj.m2();
+}
+
+
+
+}
+
+Output:
+this is m1 method
+m2 method
+
+
+----------------------------
+15-6-2024
+=============
+
+
+//wap to create 2 interface,in both interface create one  diff method ,
+implement both method and call method
+
+
+
+interface i1{
+
+void m1();
+}
+
+
+interface i2{
+void m2();
+}
+
+
+class A implements i1,i2{
+
+public void m1(){
+
+sop("this is m1 method")
+
+
+-------
+
+int   --->Integer 
+
+
+m1(String a) 
+
+
+
+
+
+int -->    --> Autoboxing 
+ 
+
+
+String a=null;
+
+
+a.charAt("a")--->
+
+
+
+Integer obj= null;
+
+obj.m1();----->run time
+
+
+
+void m1() throws Exception {
+int a=12;
+String b=null;
+s.charAt("a");    //
+
+
+if(){
+
+throw new Exception("this is positive");
+}else {
+
+throw new Exception("this is negitive");
+}
+
+
+text==12   
+
+
+------------------------------------
+17-6-2024
+===========
+
+
+
+
+}
+
+
+public void m2(){
+
+
+sop("this is m2 method")
+}
+
+psvm(){
+
+A obj =new A();
+
+obj.m1();
+
+obj.m2();
+
+}
+}
+--------------------
+20-6-2024
+============
+MultiThreading 
+===============
+-Its execute multiple processes parallel .
+
+Thread  -it is process.
+
+
+Life cycle of Thread:
+
+step:
+1)new
+2)Runnable
+3)Running
+4) Waiting
+5)terminated or dead thead or exit
+
+
+Thread class -predefined in java.lang   
+
+
+implements thread-
+
+1) extends Thread  
+
+2)implements Runnable
+
+
+-method
+
+-getName()
+-setName()
+-setPriority()---->   1- 10   -->5 
+-getPriority()--->
+-start()
+-run()
+-wait()
+-sleep()
+-currentThread()
+-
+
+
+class A extennds Thread{
+psvm(){
+
+create obj
+to call start
+obj.start();  //
+
+}
+
+public void run(){
+
+//sop
+//logic
+
+int a=34-4;
+}
+
+
+//wap to get thead name using thread class
+ 
+----------------------------------------------------
+
+22-6-2024
+===========
+
+
+Explain Thread class with ex
+class ABC extends Thread{
+
+public static void main(String args[]){
+
+ABC obj = new ABC();
+
+obj.start();
+
+System.out.println(obj.getName()  );  //Thread-0   Thread-1  
+
+obj.setName("ABC");
+
+System.out.println(obj.getName()  );
+
+System.out.println(obj.getPriority()  );
+obj.setPriority(1);
+
+
+System.out.println(obj.getPriority()  );
+
+}
+
+
+public void run(){
+
+try{
+System.out.println("this is run method");
+
+int a=12+66;
+
+System.out.println("addition of no="+a);
+
+System.out.println("addition of no="+Thread.currentThread().getName() );
+Thread.currentThread().sleep(2000);
+
+System.out.println("addition of no="+Thread.currentThread().getPriority());
+
+}catch(Exception ex){
+	
+	
+}
+}
+}
+
+-----------------------------------------------------------------------
+24-6-2024
+==========
+
+
+
+//wap to set new thread name  and print that thread name using thread class
+
+class NewThread  extends Thread{
+
+public static void main(String args[]) throws Exception{
+
+NewThread obj =new NewThread();
+
+obj.start();
+System.out.println("thread name="+obj.getName());
+
+
+obj.setName("New Thread");
+
+System.out.println("thread name="+obj.getName());
+
+
+
+System.out.println("thread Priority="+obj.getPriority());
+
+obj.setPriority(3);
+
+
+System.out.println("thread Priority="+obj.getPriority());
+
+
+obj.sleep(2000);
+
+System.out.println("thread name="+obj.getName());
+
+
+}
+
+
+public void run() {
+
+try{
+System.out.println("thread name="+Thread.currentThread().getName());
+
+
+Thread.currentThread().setName("New Thread");
+
+System.out.println("thread name="+Thread.currentThread().getName());
+
+
+
+System.out.println("thread Priority="+Thread.currentThread().getPriority());
+
+Thread.sleep(2000);
+
+System.out.println("thread name="+Thread.currentThread().getName());
+}catch(Exception ex){
+	
+}
+}
+}
+----------------------------------------------------------------------
+25-6-2024
+==========
+
+1) extends Thread class
+
+2)implements Runnable interface
+
+
+class A  implements Runnable{
+
+psvm(){
+A obj=new A();
+
+Thread t = new Thread(obj);
+
+t.start();
+}
+
+
+public void run(){
+//sop
+//logic
+
+
+}
+
+
+class A extends Thread {
+
+}
+}
+---------------------------------------------------
+26-6-2024
+===========
+
+
+
+life cycle of thread 
+new 
+Runnable
+Running 
+Waiting 
+terminate
+
+
+Schedular -to select process    
+
+ex.
+
+----------------------------------------------------------------
+27-6-2024
+============
+
+getName();
+setName("new");
+run()
+start()
+sleep()
+getPriority()   //
+setPriority(2)    //
+
+
+
+how to use thread 
+
+1)extends Thread class 
+
+2)  implements  Runnable interface 
+
+implements 
+
+psvm(){
+create obj
+create thread  obj 
+obj.start();
+
+}
+
+
+run(){
+
+}
+
+
+class A  
+
+class B
+
+class C
+
+
+class D extends A 
+
+interface i1
+
+interface i2
+
+
+class implements i1
+----------------------------------------------------
+28-6-2024
+==============
+Synchronization Concept
+----------------------
+-to execute process or Thread one by one.
+
+1)Synchronized method.
+2)Synchronized block.
+
+
+synchronized -keyword
+
+class A  extends Thread{
+
+
+run(){
+
+}
+
+1)
+
+synchronized void m1(){
+
+}
+2)
+
+synchronized (this) {
+
+sop()
+
+}
+
+
+{
+//sop
+}
+
+static {
+
+}
+
+}
+
+---------------------------------------------
+1-7-2024
+============
+
+Daemon Thread
+----------------
+
+-its process ,its execute in background.
+-its always depend on other thread
+
+
+-isDaemon()   --------->to check thread run background or not
+-setDaemon(true)---->to run thread in background
+
+
+
+class A extend Thread{
+psvm(){
+A obj 
+B obj=new B()
+
+obj.setDaemon(true);
+
+}
+
+}
+
+class B extends Thread{
+
+}
+-----------------------------------------------------
+2-7-2024
+=========
+
+//wap to create one class extends Thread class ,to set one process as daemon,in that
+ give simple one string a="java" ,find out length of this string,print length size
+ (run process in background).other process as normal.
+
+//read Daemon Thread 
+
+---------------------------------------------------------------------------------
+3-7-2024
+==========
+
+//wap to create one class extends Thread class ,to set one process as daemon,in that
+ give simple one string a="java" ,to replace v char to 'a'
+ (run process in background).other process as normal.
+
+
+class A extends Thread{
+
+p void run(){
+
+if(Thread.currentThread().isDaemon()   ){
+sop("this is daemon thread");
+String a="java";
+
+sop("given String length count=  "+a.length()  );
+
+}else {
+sop("this is normal thread");
+}
+}
+psvm(){
+A obj =new A();
+
+obj.setDaemon(true);
+obj.start();
+
+A obj1=new A();
+obj1.start();
+}
+}
+-----------------------------------
+Thread class
+
+join()  method
+----------------
+
+-its also use for to execute process one by one.
+
+-join()
+
+-join(second)  //join(3000)
+
+
+ex. join(2000);
+
+-synchronized method
+
+class A extends Thread {
+run(){
+//find out duplicate no from int array
+
+int a[]={2,4,5,68,4};
+
+}
+psvm(){
+A obj =new A();
+
+obj.start();
+
+try{
+
+obj.join();
+
+}catch(Exception ex){
+
+}
+}
+}
+-----------------------------------------------------------------
+4-7-2024
+===========
+IO File handling 
+-------------------
+
+
+I-input
+O-output
+
+
+
+-to use wtite file or read file,create file
+
+
+java.io    -->package
+
+File
+FileWriter
+BufferedFileWrite
+
+
+File file = new File("C:\\demo\\music.txt"); 
+
+method
+
+-createNewFile();---------->  create file
+
+-mkdir()-------------------->   create folder   
+
+
+class name
+-File
+-FileBufferReader
+
+
+
+//wap to create file 
+
+import java.io.*;
+
+class A{
+
+psvm(){
+
+File obj =new File("C:\\demo\\music.txt");
+obj.createNewFile();
+}
+}
+------------------------------------------------------------------
+5-7-2024
+============
+
+Exception Handling
+---------------------
+
+-its handle run time error
+-to give user friendly msg
+
+
+try-->to write code 
+catch-->its handle error,give msg
+finally--->to give mandatary statement
+throw-->its keyword     ------>to give custom exception
+
+throws--->its keyword  ------->to handle run time error at method
+
+syntax
+----
+
+void m1(int a) throws Exception {
+
+}
+
+
+syntax
+-
+throw new Exception("msg");
+
+
+try  -catch
+sytax
+------
+
+try{
+
+//write code
+
+}catch(Exception obj){
+
+sop();
+}finally{
+//sop
+}
+
+ex..
+
+class A{
+
+psvm(){
+try{
+if(45 %2 ==0   ){
+sop(even)
+}else{
+sop(odd)
+}
+
+}catch(Exception ex){
+sop("this is catch block");
+}
+
+
+}
+
+}
+------------------------------------------------------------
+6-7-2024
+==========
+
+Exception type
+
+1)Checked Exception  -----> It is handle compile time exception  ---->   file not found ,sql exception 
+2)UnCheked Exception   ----->its is handle Runtime Exception--->   arithmeticException ,NullPointerException
+NullPointerException-->if any value  (variable  or obj) is null ..String a=null;  a.chartAt(1) //  A obj=null;
+obj.m2();
+ArithemticException--> division of zero
+
+-----------------------------------------------------
+8-7-2024
+=========
+Constructor
+-----------
+
+oops concept
+
+-class 
+-object
+-method
+-pillar of java -inheritance,polymorphism,encapsulation,Abstraction
+-keyword
+-operator
+-variable
+-Constructor
+-data Type
+-Array
+
+int ,char,float,double,long,short---->
+
+byte- 1 byte-8 bit
+short- 2 byte-16 bit
+int- 4 byte-->32 bit
+long- 8 byte -64bit
+
+
+float -4 byte--32bit
+
+double-8 byte-64 bit
+char- 2 byte
+boolean-1 byte
+
+int var =2;
+
+syntax -methood
+
+<acess modifier>  <return type> method Name(Parameter){
+//logic
+}
+
+
+sytax -block
+
+static{
+
+}
+
+
+>   ,  < ,<=
+
+&&---and----->its check both condition
+||----or---->its check only one condition
+
+(condition)  ?  true : false
+
+
++ ,-,/ ,* %
+
+
+String a="ABC";
+
+
+7.09f
+
+float -->0.0f
+String -->null 
+int--->0
+
+
+A(int a){
+
+}
+
+
+
+new A(45);
+
+Array syntax
+
+int var[]={22,23,78,79,09,12,89};
+
+int [] var ={12,6};
+int a[]=new int[10];
+
+a[0]=34;
+
+extends
+
+type 
+1)one dimensional
+2)multi dimensional
+
+----------------------------------------------------------------
+9-7-2024
+==========
+Inheritance
+____________
+
+multiple inher  vs hairachical
+
+extends keyword
+
+m-     multiple super class and one child class
+hairarchical- one superclass and multiple child class
+
+
+Polymorphism
+-------------
+
+method overloading    vs   method overriding
+
+-its need one class        -its need 2 class
+-same return type,
+ same method name 
+but diff                 -same method name,same parameter,but diff logic
+paramiter
+
+
+Abstraction
+-------------
+abstract class
+iterface
+
+
+abstract class A{
+
+}
+
+interface ABC{
+void  m1();
+}
+
+
+class B   implements ABC     //extends -keyword 
+{
+
+void m1(){
+
+}
+}
+
+Encapsulation
+--------------
+
+private variable
+get and set
+
+getter and setter method
+
+set method  syntax
+
+p void setName(String a){
+
+this.a = a;
+}
+
+
+get method syntax
+
+private String name ="ABC";   //null
+
+p String getName()[
+
+return name ;  //ABC
+}
+----------------------------------------------------------------------------
+10-7-2024
+==========
+instance var---->Scope-outside method ,block,constructor--whole class
+static var----->Scope-outside method ,block,constructor--whole class
+local var------>Scope-within method ,block,constructor
+
+
+
+
+// loop statement,with syntax of for,while, do while  loop.
+
+
+
+//wap to create one method,in that method give sop("m1"),,then excute this method 5 times use while loop
+
+
+
+for(int i=1;i<=10 ;i++){
+sop(i);
+}
+
+
+
+while(i<5){
+sop(i)
+i++;
+
+
+}
+
+
+
+do{
+i++;
+
+}while(condition);
+
+
+
+if(){
+
+}else{
+
+}
+
+
+
+break;   continue;
+
+
+if(i==2){
+continue;
+}
+
+---------------------------------------------------------
+11-7-2024
+==========
+
+Array-its store multiple value in single variable with similar data type .
+
+syntax:
+int []i={23,5,7};
+
+
+
+int a[] = new int[10];
+
+int a[]={};
+
+a[0]=45;
+a[1]=98;
+a[2]=33;
+
+
+int a[]={45,98,33};
+
+--------------------
+Collection 
+-----------
+-it is store the similar data type and disimillar data type in single object.
+
+obj = 12,"string"
+
+int []=34,67
+
+int a=55;
+int name[]={"3","2","1"};
+obj 
+
+
+Collection --Interface
+
+
+
+collection 
+
+obj = 12,"string",45.5f,'c'
+
+-predefined method present for adding,remove data.
+-not size fixed for store data 
+- to use java.util package
+
+Super Interface Name
+
+	Iterable
+	    |
+	Collection
+	    |
+List        Queue      Set
+
+  |
+ArrayList
+  |
+LinkedList
+  | 
+Vector
+  |
+Stack
+
+
+--------------------
+List  -Interface
+
+-4 class included
+-to store similar data type and disimillar data type in single object..obj =12,"abc"
+similar type-homogenuse   
+dissimillar type- hetrogenuese
+
+-its store duplicate value.
+-its store null value.
+-to maintain the sequence.(insertion preserved)
+23,,,, 23  .
+
+12,78,"d",34.5f----->12,78,"d",34.5f
+78,12,34,"d"
+
+-------
+
+
+syntax for ArrayList
+
+
+Collection class Name object = new Collection class Name();
+
+ArrayList obj = new ArrayList(); //5 
+LinkedList obj = new LinkedList();  
+//A obj =new A();
+
+obj.add(67);
+
+int a[]={23,55,6};
+
+
+.add(67)
+.addAll()
+.remove(index)
+.contains(value)
+.exists()
+.size()
+
+ex.
+
+
+import java.util.*;
+class A{
+
+psvm(){
+ArrayList obj =new ArrayList();
+ 
+obj.add(23);
+obj.add(80);
+
+obj.add("ABC");
+obj.add(null);
+
+sop(obj);   
+
+}     ----------[23,80,ABC,null]
+}
+---------------------------------------------------
+13-7-2024
+==========
+
+Array
+--------
+
+-to store multiple data into single variable
+-to store similar data into variable(same data type)
+-to store data in fixed size
+
+syntax:
+
+data type var []= {value,value};
+
+int a[]={34,67,89};
+
+a[1]=100;
+
+
+int a[]= new int[10];
+
+a[0]=12;
+a[1]=56;
+
+int a[] []  ={12,56,0,0,0,0,0,0} {45,67,8,90,2,21};
+
+
+
+for(int i=0;i<a.length;i++ ){
+	sop(a[i])   // 34  67  89    
+}
+
+
+---------------------------------------------
+16-7-2024
+==========
+Method
+--------
+
+-write logic
+
+access modifier return type method(parameter){
+
+}
+
+void m1(int a){
+
+}
+
+Method  Vs Constuctor
+-----------------------
+
+
+void m1(){
+
+}
+
+A(){
+this.m1();
+}
+
+
+//wap create default const,prameterized const,print both  simple statement.
+
+class A{
+
+
+
+pscm(){
+
+A ob =new A();
+}
+
+
+A(){
+sop("default")
+
+}
+
+
+
+A(int a){
+
+this();
+
+sop("parameterized " )
+}
+
+--------------------------------------------
+18-7-2024
+============
+if else
+switch
+for loop
+method
+cost
+object ,class
+
+
+-------------------------------------------
+class A{
+psvm(){
+
+Integer num1=400;
+
+
+Integer num2=400;
+
+if(num1 == num2){
+sop(0)
+}else{
+sop(1)
+}
+
+}
+
+
+
+//  == operator   ------> its use for to compare reference variable
+
+//equals  method  ---->   
+
+Integer a = new Integer(500);
+
+
+Integer b=new Integer(900);
+
+
+------------------------------
+
+switch(exp){
+
+case 1 : 
+break;
+default : sop()
+break;
+}
+
+----------------------
+
+int n=10;
+switch(n){
+case 10 :sop(n* 2);
+case 4: sop(n*4);break;
+
+def:
+
+}
+
+
+exp == value  
+
+
+output:20   40 
+
+
+----------------------------------
+if(){
+
+else if(condition){
+
+}else if(){
+
+}else{
+
+}
+if(){
+
+}
+}
+
+-----------------------------
+String a="56.0";
+
+String b="94.0";
+
+sop(a+b)     //  56.094.0     //addition 
+
+double c =  Double.parseDouble(a);
+
+
+
+sop(c+d)   //  150.0
+----------------------------------------
+
+i=5
+
+i>=1      //  5 >=1   i--
+
+5%2 ==1       5%2  ==        1    ==  1----->
+4%2 ==1     == 0.08   
+
+
+====================================================
+
+String a="one"+1+2+"two";
+
+
+sop(a)///    one12two   //
+===========================================
+
+int g=3;
+
+sop(++g  *   8)
+
+g+1===3+1=4     g=4    4*8 = 32    
+--------------------------------------------------------
+
+String bankName,area;
+
+
+void bank()
+
+sop(bankName)   // null
+
+
+----------------------------------
+i=5       i>10     5>10      5*4=20
+
+
+20
+-----------------------------
+int n=4279;
+int d;
+
+while(n  > 0){
+d=n%10;     //9   2
+System.out.println(d);    //9     2
+
+n=n/100;    //  4279/100 =   42.79        ===42        42/100  ==  0.42     =====   n=  0  
+
+
+int v;
+for( v=5;v>10;v++)
+System.out.println(v);
+
+System.out.println(v*4);  //5*4
+
+
+0--->   00
+1--->  01
+2---->10
+3---->11
+
+4
+Integer.toBinaryString(1);
+-------------------------------------------------------------
+23-7-2024
+============
+Type Casting
+----------------
+
+-convert data from small data to lagest data using data type.
+
+
+byte--->short--->int--->long---->float------>double
+
+
+byte --int 
+
+type:
+1)Implexit--
+2)Explixit
+
+
+
+ex.
+
+byte a=34;
+
+
+int c =a;
+
+float d =a; ///34.00
+
+
+
+
+2)
+
+ex.
+
+data type varname = (data type) exist varable name;
+
+
+
+float a=78.4f;
+
+int b= (int) a;
+
+
+
+byte c=(byte)a;
+
+
+
+
+Reference Object type casting
+----------------------------------
+
+
+parent class
+
+child class
+
+1)downcasting
+2)Upcasting
+
+
+
+class A{
+int a=33;
+}
+
+
+class B{
+
+A ob= new  A();//1
+
+A obj = new B();  //2   //upcasting   reference object
+
+}
+
+
+(data type) varname;
+
+
+
+child class name obj=    (class name) object name;
+A  obj1 =new A();
+
+
+B obj2= (B)obj1; //1     //downCasting 
+
+
+B ob= new B();//2
+
+---------------------------------------------------------------------------------------
+24-7-224
+==========
+
+
+List -interface
+
+
+ArrayList-class
+LinkedList-class
+
+
+1)import java.util pack
+2)create object of collection
+3)add values
+4)perform any operation-->(delete,clear values,size)
+5)print values from object
+
+
+
+import java.util.*;
+
+class A{
+psvm(){
+
+LinkedList obj =new LinkedList();
+
+obj.add(34);
+obj.add("ABC");
+obj.add(true);
+obj.add(34);
+obj.add(null);
+
+
+sop(obj.size());
+sop(obj);
+
+// [12,86,"tt"]  --add 77
+}
+
+}
+
+
+----------------------------------------
+ArrayList vs LinkedList   class  
+
+-arraylist is fast for reading purpase
+-[23,55,78,8]
+
+-LinkedList is fast for adding data,remove data
+
+
+node--  value  |next  address     ---
+------------>
+
+create object of collection class
+
+1)nornal class object
+
+ArrayList obj =new ArrayList();
+
+2)Generic Type object
+
+-to store data only one type.ex."222"
+
+ArrayList  <data type>  obj = new ArrayList <data type> ();
+
+ArrayList  <data type>  obj =new <data type>  ArrayList();
+
+
+ArrayList <String>  obj = new ArrayList<String> ();
+
+ArrayList <Integer>  obj =new ArrayList<Integer>   ();
+obj.add("sss")
+
+int s[]={34,55}
+
+
+psvm(){
+
+Vector obj = new Vector();
+obj.add(56);
+
+Stack obj1=new Stack();
+obj1.add(56);
+}
+
+List<Integer>  obj =new ArrayList<Integer>   ();
+
+
+List<Integer>  obj =new LinkedList<Integer>   ();
+
+-----------------------------------------------------------------------
+25-7-2024
+==========
+
+Set -Interface
+--------------
+-to store some data type values and diff data type values into object.
+-its not allow to store duplicate value
+-its allow to store null value,but only time
+-its not maintain sequence.   1,2,3----->1,2,3----->3,1,2--->2,1,3----->1,2,3
+
+--->HashSet
+
+--->LinkedHashSet
+
+
+SortedSet-Interface
+----------------------
+
+-->TreeSet-class
+
+-its store only one data type values
+-its not allow to store duplicate value
+-its not allow to store null values
+-its not maintain sequence.
+------------------------------------------------------------------
+26-7-2024
+==========
+
+Queue -Interface
+
+-its allow only  to store value same data type
+-its not allow to store null value.
+-its allow duplicate value.
+-its not maintain sequence.
+
+-->PriorityQueue- class
+
+
+--------------------------------------
+forEach-to read data from array,object
+
+for(Data type tm : exist variable){
+
+}
+
+
+ex.
+
+TreeSet obj3 =new TreeSet();
+
+obj3.add(34);
+obj3.add(67);
+obj3.add(11);
+sop(obj3)//      //---> [34,67,11]
+
+
+for(Object tm: obj3){
+
+System.out.println(tm);
+}
+-------
+for(int i=0;; i<=obj3.length   ;i++){
+
+}
+
+---------------
+
+for(int i=0;; i<=obj3.size() ;i++){
+sop(obj3.get(i)   )  //34    ,67   ,11
+}
+---------------------------------------------------------------------------------
+28-7-2024
+============
+
+
+whilr loop
+------------
+hasNext()------>check values present or not
+next()------>print  or get value from object
+
+
+
+Iterator itr=obj.iterator();  
+
+
+
+
+Iterator ir= obj5.iterator();
+
+while(ir.hasNext() ){
+	System.out.println(ir.next() );
+}
+
+------------------
+Date
+---------
+
+ 
+
+Date d1 = new Date(); 
+        System.out.println( d1); 
+
+
+
+
+//month -date -year 
+//year-month
+//12/4/2024   11:44:33pm
+
+
+//SimpleDateFormat    ----class
+--format()-method
+
+
+--to convert date object--String
+
+--parse()-method
+
+
+date  --12/4/2024    -String   ---Aug-23-2024,,,,----->  12.4.2024 12:23:22 am 
+
+Date class -object      ----parse() method      ///sat day month year time
+
+
+
+date ,varchar-string ,int---data type  ---DB---Date 
+-------------------------------------------------------------------------
+29-7-2024
+==========
+Wrapper class
+---------------
+
+-to convert primitive data type to object type
+-primitive-int ,long,float,
+-
+int ---Integer
+string ---Integer
+
+-----------------
+
+String n="123";
+int a= Integer.parseInt();// throw runtime error
+
+Integer--Float---Double
+
+-------------------------
+int----Integer
+
+
+int a=3;
+
+Integer ob= new Integer(45);
+
+
+int---> Integer///
+int a=3;
+Integer ob2= Integer.valueOf(a);//AutoBoxing 
+
+Float v= Float.valueOf(a)
+
+
+
+//AutoUnboxing  
+Integer  --->int
+
+
+Integer obj =new Integer(677);
+
+int a= obj.intValue();//677 //AutoUnboxing  
+
+
+-----------------------------------------------------------------
+31-7-2024
+=========
+
+Map Interface
+---------------
+
+
+-its store value in key value pair into object.
+-key,value pair
+-
+
+obj.add(34)
+obj.put(1,"ABC")
+
+
+
+		Map    -->Inteface
+		  |
+    --------------------------
+    |			     |
+HashMap			LinkedHashMap		--->Class Name
+
+
+-its allow same and diff type data
+---Map doesn't allow duplicate keys, but you can have duplicate values
+-put method.
+-size()
+-clear()
+-remove(key)
+-replace(key,oldvalue,newValue)
+-containsKey(key)
+-containsValue(value)
+
+-{1=ABC, 2=XYZ, 3=55}
+
+-->[23,56,44,677,97]
+
+
+  Map<Integer,String> map=new HashMap<Integer,String>();  
+  map.put(100,"Amit");  
+  map.put(101,"Vijay");  
+  map.put(102,"Rahul");  
+
+
+HashMap obj =new HashMap();
+obj.put(1,"55");
+
+
+
+HashMap<Integer,Integer>   obj =new <Integer,Integer>  HashMap();
+
+obj.put(1,565);
+obj.put(2,"899");  //error 
+
+-node-Address,value ---->Linked List  
+-if key is same ,then value will be override
+-
+
+
+
+-data print
+
+forEach,while loop
+
+-Map.Entry 
+
+-getValue()
+-getKey()
+
+-
+
+for(Map.Entry   tm:   obj.entrySet()  ){--->key ,value  
+
+
+sop(tm.getKey()  )
+
+sop(tm.getValue()   )
+
+}
+
+-
+JDBC   --concept-----DB COncetivity
+
+mysql  --->>Store
+
+
+HTML,css--Design
+
+-------------------------------------------------------------------
+1-8-2024
+========
+
+HashMap,TreeMap,LinkedHashMap-->Map Interface
+
+HashSet,LinkedHashSet--->Set Inteface
+ArrayList,LinkedList--->List Inteface
+
+--------------------------------------------------------
+MySql
+=========
+-to store data into DB.
+-relational table management
+-
+--Oracle
+-value as no
+
+number data type->oracle
+int data type -->mysql
+
+--------------------
+Data type 
+
+-to store no --int data type
+-to store string value-->varchar---->data type
+-to store Date -->date -->data type-->   yyyy-mm-dd
+-to store decimal value-float ,double-->data type 
+----------------------------------------------------------
+Operator
+
+&&   -->AND
+||    -->OR 
+--------------------------------------------
+Install MySql
+--DownLoad from chrome
+--------------------------------------------
+
+--->create Data Base
+--its collection of table for store data.
+-Table-to store data into column
+-Column -to store data
+
+
+	DB-->no of table
+	|
+      Table----->no of columns
+	|
+	Column--------------->data
+
+---------------------------------------------
+->create Data Base
+Query-->Cammand
+
+
+syntax:
+
+create database  databaseName;
+
+ex. create database Bank_DB;
+-------------------------------------
+-show databses;
+-delete DB--->drop database dbName;
+-select DB;
+
+-use databaseName;
+ex .   use EMP;
+
+-check table.
+
+-show tables;
+-------------------------
+create Table;
+
+-->sytax:
+
+create table tableName (column name  data type (size),columnname data type);
+
+ex.  create table Student (rollNo int(3),st_name varchar(2777), address varchar(333)  );
+
+---------------------------------------------------------
+2-8-2024
+===========
+
+SQL ---Structure Query Language
+
+
+
+DQL-Data Query Lang--->select query
+DDL-Data Defination Lang--->create,alter,Drop,Truncate,Rename
+DML-Data Manipulate Lang--->insert,delete,update,merge
+DCL-Data Control Lang---->Grant ,Revoke
+TCL-Tranction Control Lang---->commit,rollback
+
+--------------------------
+-show tables;
+--table structure check
+--desc tablename;
+ex.desc student;
+-----------------------------------
+table delete--drop
+
+ex.  --- drop table tablename;
+-----> rename table oldname  to newName;
+ex.rename table notes to n1; 
+------------------------------------------
+truncate and delete query for delete record.
+-
+delete from tablename;
+---------------------------------
+insert query-to addn  dat into table.
+
+syntax:
+
+insert into tableName values(12,"ABC",45)   ;
+
+insert into tableName (column name)   values(value,value,45,"eeee");
+
+-----------------------------------
+record check-select Query
+-select * from student;
+
+-select rollno,st_name  from student;
+
+------------------------
+data modify-Update query
+--
+update tablename set column=value where columnname =value;
+update student set st_name="sunil" where rollno=2;
+-----------------------------------------------------------------------
+3-8-2024
+==========
+Alter command
+-----------------
+-to add column,drop column,rename column  
+--add()
+--drop()
+-rename column oldcolumn to newcolumn
+--modify()
+sytax:
+
+alter table tableName    add(column name data type(size) ); 
+
+ex.  alter table  student    add( st_mark int (33),  st_father_name varchar (444)  )   ;
+---alter table  student    drop( st_mark )   ;
+--->  alter table student rename column   rollno  to r_no;
+
+--------------------------------------------------
+select Command
+-----------------
+
+check data from tables or filter data from table.
+sytax:
+
+select columnName as Alias   or  mathematical operation  or * 
+ from   tableName      [clouses -- where     group by  having ]  
+  order by columnname [asc  or desc]  limit limitno  ;
+
+
+ex. select * from tablename;
+select * from student  order by   st_name  desc  limit 1 ;   //Descending order
+select * from student  order by   st_name  asc limit 2 ;  ///Ascending order
+
+select rollno as R_no from student  order by   st_name  desc  limit 1 ;
+
+select * from student  order by   st_name  desc  limit 1 ;
+
+select rollno from student ;
+
+select 12+3   from student;  
+-------------------------------------------------------------
+5-8-2024
+===========
+
+clouses-where group by ,having,distinct 
+---->aggregate function-min,max,avg,count,sum
+
+--->primary key,unique,null,join
+between and,like,and ,or,in
+
+-----------------------------------------------
+
+rollback;
+commit;
+
+
+grant,revoke ;---->to give permission to access DB
+----------------------------------------------------------
+aggregate function-min,max,avg,count,sum
+
+-->to find out sum of values,max value etc...
+
+select  sum(salary) from employee;
+select max(salary) from employee;
+select avg(salary)  from employee;
+
+select count(salary)  from employee;
+----------------------------------------------
+
+Key----> its use for give restiction to use 
+
+null --- do not allow null value
+unique ----  do not allow duplicate values,
+
+primary key---do not allow null values, to store unique value
+(do not allow duplicate no)
+
+
+-->create table Student2  (sno int size primary key , sname vatchar(22)    );
+
+-->create table Student2  (sno int unique , sname vatchar(22)    );
+
+
+---> where  clouse----> 
+
+select * fro student  where rollno=5;
+
+select * fro student  where s_name="ankita" or rollno=6 ;
+
+select * fro student  where s_name="ankita" and rollno=6 ;
+
+-------------------------------------------------------------
+6-8-2024
+==========
+
+between  and  
+
+-to find out value between two range .ex 10  to 20.
+
+syntax:
+
+
+select * from student  where column name  
+ between  1stvalue  and targetvalue;
+
+
+ex.select * from student where salary between 2500  and 5000;
+----------------------------------
+like-keyword
+
+-to find out or search name from table.
+
+
+syntax:
+
+select * fromm student where column name like  "%Ankita%";
+
+
+select * from student where rollno in(value,value);
+select * from student where st_name  in ("XYZ","ABC");
+---------------------------------------------------
+clouses---where ,group by,having,order by
+
+--to use for filter data.
+where-to use for find out data using condition
+
+group by -  to use for filter record as per one column.
+
+-IT  -5 student --2- Ankita 
+
+
+having--to use for fitering data at particular condition .
+
+ex.select * from student group by rollno=2  having st_name="abc";
+
+-------------------------------------------------------------------
+8-8-2024
+===========
+
+distinct  keyword
+---------------------
+-to use for search uniqe data from DB  or table.
+-its remove duplicate value.
+
+ex.  select distinct columnname from tableName;
+
+ex.select distinct st_name from student;
+
+
+join concept
+-------
+
+-to use for to exact 2 table  or to display data from 2 table.
+-its performv on select query
+-
+
+-left join-its give all record from left table(table1) and matching record from right table(table2)
+-right join--its give all record from right table(table2) and matching record from left table(table1)
+-inner join or join ---->its displays common record from both table.
+-full join--its displays common record from both table.
+
+student1   -table-sid--sid,sname-
+student2 -table-sid--address,adhar-
+
+
+Syntax:
+
+slect alias.columnName  from 1st tableName aliasName  
+join 2nd TableName  aliasName   
+on 1stAliasName.columnName = 2ndAliasName.columnName;
+
+
+ex.
+
+select e.sid,e.name, t.address,t.adhar from student1 e 
+ join student2 t    on e.sid = t.sid;
+
+
+---
+select e.sno,e.sname t.rollno, t.st_name,t.addr  from student t  
+right join student2 e  on t.rollno =   e.sno;
+
+
+left join---5 record with  +1  
+
+
+right join---3 record with +1 
+st-5
+s2-3
+
+st-st2----5 record--
+
+
+------------------------------------------------
+9-8-2024
+===========
+
+JDBC Concept--Java Data Base Conctivity
+------------
+
+
+client(front Page)-------- JDBC -----------------DB
+
+
+-to import java.sql.*;
+-
+
+1)Driver Inteface - 
+2)DriverManager-class--getConnection()
+
+-to need DB userName,Password,URL
+-mysql Driver
+-to get,add,modify,delete,update data.
+
+data get-select 
+data add-insert into
+data update-update query
+
+
+
+-DB-emp-table-Student-column-rollno,stname,address
+
+
+class-
+-Statement-->createStatement(query);
+-PreparedStatement--->prepareStatement(query)
+-CallableStatement-
+
+--select-get data---->obj.executeQuery();
+
+--insert/delete/update------add,modify data---->obj.executeUpdate();
+
+
+Step for JDBC COnnection:
+1)load Driver for connect to software
+2)create Connection to DB-mysql
+3)create Query-create,insert,select
+4)executeQuery
+5)close connection-close()
+
+
+class ABC{
+
+psvm(){
+
+// load  driver  for connect DB software
+ Class.forName("com.mysql.jdbc.Driver");
+
+String url="jdbc:mysql://localhost:3306/emp";      //localhost:portNo/databaseName
+String userName="root";
+String password="root";
+
+
+//create connection with DB
+Connection con = DriverManager.getConnection(url,userName,password);
+
+
+//to create  query
+
+String query="create table Student3 (sid int (11),st_name varchar (33)  );  ";//any query 
+
+
+//to execute query
+
+Statement obj = con.createStatement();
+obj.executeUpdate(query);  //execeuteQuery()---select
+
+//close connection
+con.close();
+
+}
+}
+------------------------------------------------------------------------
+13-8-2024
+===========
+
+-Download Mysql connector-J
+
+Set Path --Mysql Connector -J------>
+
+-go to evs variable-System variable-
+-create one new variable if not exists as ClassPath.
+
+CLASSPATH
+;D:/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0.jar;
+
+;C:/Users/LENOVO/Music/Program/mysql-connector-j-8.3.0.jar;
+----------------------------------------------------------------
+19-8-2024
+==========
+
+use alter cammand
+------------------
+
+table--add column,modify data type,delete column,rename column   
+
+ex.  alter  table student2  add(address varchar (23) ); 
+
+alter  table student  drop(address,sid,st_name)  ; ------------------>its delete column 
+
+drop table student;------->its delete table with table stucture
+-------------------------------------------------------------------
+to display data from DB
+-------------------
+-to use select
+-to executeQuery()  method---its return data
+- to use Statement class,  ResultSet inteface 
+
+
+ex.
+
+//load driver
+//create onnection with Mysql
+//
+
+Connection con =DriverManager.getConnection(url,username,password);
+
+//create query
+
+
+// String query="select * from emp";
+
+Statement obj =con.createStatement();
+
+
+ResultSet rs  = obj.executeQuery(query);
+
+
+//to use get method----->getString()-----column data type String----
+//getInt()--->column data  type int
+//getFloat()  ---
+
+for(int i=0;i<rs.size()  ;  i++){
+
+sop(rs.getString(i)  );
+
+sop(rs.getInt(i)  );
+}
+--------------------------------------------------
+16-8-2024
+==========
+Insert data to DB
+-------------------
+
+-to use PreparedStatement class
+-method name----prepareStatement()
+
+String sql="insert into emp (rollno) values(?)";  
+
+-to use set method
+-setInt(value);
+-setString("ABC");
+------------------------------------------
+HTML
+=========
+-Hyper text Markup Language
+-----
+-Html,css,js ,react,angular  lang
+
+-its use for design web page.
+
+tag---properties-syntax
+-to use browser for display web page.
+-create simple text file,after save that file with .html extension.
+-to store html file using .html  or .hml extension.(format)
+-
+-----------------------------
+<tag Name>
+
+
+ex.
+-------------------
+
+<html>
+
+1)  <head>    
+	<title>  this 1st html page   </title>
+	<script>    </script>
+	<style>     </style>
+</head>
+
+
+2) <body>
+
+//to design 
+
+</body>
+
+</html>
+---------------------------
+
+<html>
+<head>
+    <title>Online HTML Editor</title>
+</head>
+<body>
+    <h1>Online HTML Editor</h1>
+    <p>Hello World sjfjsdjfhlsdhfjsdhfhs
+gdgdfgdfgdfg </p>
+</body>
+</html>
+---------------------------------------
+heading tag--to bold text and size 
+h1,h2,h3,h4,h5,h6------->
+
+------------------------------------------------------
+20-8-2024
+==========
+<p> aaaa   </p>----->its use for paragraph,not formatted data
+<pre>  sjdhfjkshjfks kfnls </pre>------>its use for paragraph,formatted data
+
+<br>------>break text data,write text in new line
+<hr>------>draw straight horizontal line
+
+
+<b>-------->bold text
+<i>Arohi</i>--------> italic text
+<button>--------->create button
+--------------------------------------------------------------------------
+21-8-2024
+==========
+<center>----------->text in center
+<strong>--------->to highlight text in bold format
+
+<ol>-------->show list in order 
+<ul>-------->show list in unorder
+<li>--------->give list name 
+ex.
+<ol type="A">
+  <li>Math</li>
+  <li>English</li>
+</ol>
+
+
+<sup>---------->to show square,or power value
+<sub>----------> to show downline text
+--------------------------------------------------------------------------------
+22-8-2024
+==========
+
+<input   />------------> to enter data in input field,file upload
+
+--password,text box ,text area,checkbox,radio button,submit button,file,reset button,
+search button
+
+<! -- tag and ends with a -->
+ex.
+
+<input  type ="text"       />
+<input  type ="password"       />
+<input  type ="textarea"       />
+<input  type ="checkbox"       />
+<input  type ="file"       />
+<input  type ="submit"       />
+
+&nbsp; ------------------>to give space in between two char, button
+
+<textarea>----------->to type multiple lines
+
+
+<audio  >--------->to show audio file
+<video >----------> to show video file
+
+ex.
+<audio controls>
+  <source src="horse.mp3" type="audio/mpeg">
+</audio>
+
+
+<video controls>
+  <source src="horse.mp4" type="video/mp4">
+</video>
+
+<a>------------>anchor tag---> to open link
+
+<a  href="https://www.w3schools.com" > text name   </a>
+
+<a  href="contact.html" > text name   </a>
+
+<marquee  direction="left"  >text </marquee>---------------------->to highlight notification--->scroller text
+
+-------------------------------------------------------------------------
+23-8-2024
+==========
+ASCII code----> a    to    z--->     65  ---- 90   --->Capital Letter---> A=65
+
+small Leter ------>97 --- 122----->a=97
+
+  char ch = (char) i; 
+
+
+
+65   to   90    --->  90 
+
+input-->num----->  convert -------> char------
+---------------------------------------------------------
+<img>--------> to set image
+<img src="pathname"  alt="imgname"  width="34"   height="122"   />
+  
+
+<table>------->to draw table
+<th>table header
+<tr>--------->table row
+<td>--------->table data
+
+--->ex.srno,name,address
+
+syntax:
+
+<table>
+
+<tr>
+<th>sr.no</th>
+<th>Name</th>
+<th>Address</th>
+</tr>
+-----------------------------------------row
+Column
+|
+|
+|
+|
+
+<tr>
+<td>1</td>
+<td>Anil</td>
+<td>Pune</td>
+</tr>
+
+
+<tr>
+<td>2</td>
+<td>Sunil</td>
+<td>UP</td>
+</tr>
+
+
+<tr>
+<td>3</td>
+<td>Nitesh</td>
+<td>Delhi</td>
+</tr>
+
+</table>
+------------------------
+
+<table border= "1">    //border="width   type   colorname"
+
+</table>
+----------------------------------------------------------------------
+24-8-2024
+============
+Mini HTML Project
+------------------
+
+
+ex.
+<nav>
+<a href="/html/">HTML</a>
+<a href="/css/">CSS</a> 
+<a href="/js/">JavaScript</a> 
+<a href="/python/">Python</a>
+</nav>
+------------------------------
+<form>
+ <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+
+</form>
+
+<div style="background-color:red; height:180px">
+</div>	
+----------------------------------------------
+
+Bank
+--------
+Home  Interest rate  Payment   Contact   AboutUs
+
+Page:
+main page
+home 
+IRate
+payment
+Contact
+AboutUs
+-------------------------------------------------------------------
+29-8-2024
+==========
+wrapper class
+io exception
+
+if else
+switch 
+primitive data type
+object,constructor
+method,fucntion
+
+-------------------------------------------
+constructor
+--------------
+-constcr should same as class name
+-initiliaze object
+-return type
+-final ,abstract,static not use in constructor
+
+-default,parameterized constrc
+
+
+
+class A{
+
+
+A(){
+
+}
+
+
+A(int a,int b){
+
+}
+static void m1(){
+
+}
+
+
+psvm(){
+
+A obj = new A();
+
+A obj = new A(45,67);
+
+
+m1();
+
+}
+
+
+}
+--------------------------------------------------
+wrapper class 
+-
+
+--convert to primitive data type to object data
+-primitive data type---> int ,float,double,long,
+
+-object data type--->class  level data type--->Integer,  Float ,,,
+
+int ---->Integer
+
+
+collection ------>
+
+String   ---> Integer---->
+
+int,float,double,long,short,byte,char,boolean---->primitive data type
+
+Integer, Float, Long, Short,Character,Boolean,Byte---->Object Data type
+
+Integer obj = new Integer(34);
+
+
+int a=12;
+float =34.5f;
+---
+
+valueOf()
+intValue()
+
+int to Integer-
+
+
+primitive to  object level 
+float a=45;
+
+Float no =  Float.valueOf(a);
+
+
+Integer obj = new Integer(34);
+
+
+Object level to  primitive data type
+
+Float obj1=new Float(44.44f);
+
+
+float c =  obj1.floatValue();
+
+
+sop(c)---///44.44f
+
+
+
+String c="123";
+
+
+
+c+12;
+
+Float no1 =  Float.parseFloat(c);
+
+---------------------------------------------
+Exception Handling
+------------------
+
+-handle run time error  or exception
+
+
+int a[]={1,3,55,7};
+
+sop(a[5])//run time
+
+String c=null;
+
+c.toUpprerCase();
+
+
+
+try,catch,finally,throw throws
+
+
+
+Syntax:
+
+
+try{
+
+
+}catch(Exception ex){
+sop()
+}finally{
+
+}
+
+
+
+throws------>its handle  method level exception
+
+throw------->to give custom msg (exception)
+
+
+void m1(int a)   throws Exception{     ///Arithemetic ,NullPointerException
+
+int a=33;
+
+
+try{
+
+}catch(){
+
+}
+
+}
+
+
+syntax:
+
+throw new Exception("msg");
+
+class a{
+
+PSVM(){
+int a=44;
+int b=0;
+
+int c=a/b;
+
+throw new Exception("do not use 0 as denomiter");
+
+sop()
+}
+--------------------------------------------------------
+30-8-2024
+============
+
+background Color
+-----------
+
+<body background="c8.jpg">
+    <h1 style="background-color:#CC00FF;">Background Color</h1>
+
+---------------------
+4-9-2024
+===========
+oops concept
+--------------
+
+-Inheritance
+-Polymorphism
+-Abstraction
+-Encapsulation
+-
+-------------------------------
+Inheritance
+----------------
+-code usuability
+-code optimize
+-increse perform
+
+-extends keyword  
+-
+
+parent class -->base class-->super class
+child class-->derived clas-->sub class
+
+
+class A{
+String name="juhi";
+
+void m1(){
+}
+
+}
+
+class B extend A{
+
+void m2(){
+}
+
+}
+
+
+class C extend B,A{
+void m3(){
+
+}
+psvm(){
+B obj = new B();
+obj.m1();
+obj.m2();
+
+obj.name;
+
+}
+
+}
+
+Multiple Inhe----->multiple Parent and one single child class
+
+Hirarchical Inher---->one parent class and multiple child class
+
+class A{
+int age=33;
+}
+class B extends A{}
+class C extend A{}
+---------------------------------------------
+Polymorphism
+----------
+-its ability to take many form.
+
+-compile time--->method overloading---->same method name,return same,but diff parameter
+-runtime ---->method overriding-------->same method name,return same,same parameter,but diff logic
+class A{
+
+void m1(int a){
+int d=a+b;
+}
+
+
+void m1(int a){
+sop()
+}
+}
+
+class B extends A {
+
+void m1(int a){
+
+int z=a - b;
+}
+
+psvm(){
+obj.m1();
+}
+}
+--------------------------------
+Abstraction
+---------------
+-to hide data.
+- concept-abstract class       and     interface
+
+
+interface Add{
+int a=33;
+void m1(int b,int c);
+
+
+}
+
+
+class A implements Add {
+void m1(int c, int d){
+int a=12+3;
+}
+
+psvm(){
+
+B obj =new B();
+obj.a;  //33
+obj.m1();///  
+}
+
+
+}
+
+
+------------------
+abstract class
+
+abstract class A{
+int a=24;
+void m1(){
+
+}
+void m2();
+
+}
+
+
+class B extends A {
+
+void m2(){
+
+}
+
+psvm(){
+
+obj.m1();
+obj.m2();///error
+
+}
+
+}
+
+Encapsulation
+-------------
+-to binding variable and method in single class(unit)
+- to declare variable as private
+-to access that private variable with the help of getter and setter method
+
+class A{
+ private String name;
+
+public String getName(){
+return name ;
+
+}
+
+
+public void setName(String nameEx){
+ this.name= nameEx;
+
+}
+
+
+}
+-------------------------------------------------------------
+5-9-2024
+==========
+
+CSS--Cascading Style Sheet 
+-------------------------
+
+3 ways to assign css to html contents
+-Inline css
+-Internal css
+-External css
+
+1)-->Inline CSS--> style apply on only one html tag
+<pre style=" font-size : 45; background-color : red; " >  this is paragraph  </pre>
+
+2)-->Internal Css---> style apply to all page tag
+
+-use  style tag in head tag
+
+<html>
+<head>
+    <title>Online HTML Editor</title> 
+    <style> body { font-size : 45;background-color :red ;  } </style>
+</head>
+<body>
+    <h1>Online HTML Editor</h1>
+    
+</body>
+</html>
+
+3)External Css--->style apply to all page tag
+
+--it need to create one css file----ex.css
+--link that css file in HTML code  --use link tag
+
+
+<html>
+<head>
+    <title>Online HTML Editor</title> 
+    <link  rel="stylesheet" href="Ex.css"   type="text/css"   > </link>
+</head>
+<body>
+    <h1>Online HTML Editor</h1>
+    
+</body>
+</html>
+---------------------------------------------------------------------
+String class
+
+-replace()
+-substring()
+-contains()
+-length()
+----------------------------------------------------------
+6-9-2024
+=========
+
+font-family----->its use for change text lang format
+text-align------>to mange text in center,right,left
+border--------->to give border to field or text
+padding------>to give alignment to field or text
+margin------->to give alignment to field or text
+
+syntax:
+border: size;
+
+border: size type color;
+
+border: 12px solid red;
+
+text-shadow----->to give shadow to text
+
+button hover---------->to change position of button,change property
+
+--------------------------------------------------------------------------------------------
+7-9-2024
+==============
+css selector
+-------------
+-its use for to apply css proprty for html tag
+-its use for only internal ,external css 
+
+-type of css selector
+
+-Id selector--------> its use for give unique id name for identification------> #Id_Name {css property}
+-class selector---------->its use for give unique class name for identification----> .className{}
+
+-grouping selector------>to apply css for multiple html tag-----> h1,p,button{css property}
+-Universal selector----->its use to apply css property for all html tag----> *{css property}
+
+-------------------------------------------
+ID selector
+-------
+<p   id="p1" > this is css selector   </p>
+
+<p   id="p2" > this is css selector p2  </p>
+
+<style> #p1,#p2 { font-size:34 } 
+
+ </style>
+
+--External css file
+
+#p1,#p2 { font-size:34 }  
+--------------------------------------------------------
+class Selector
+---------
+
+<p   class="c1" > this is css selector p2  </p>
+
+<style> .c1 { font-size:34 } 
+
+ </style>
+-External css file
+
+.c1 { font-size:34 }  
+----------------------------------------------------------
+java script----js language
+------------
+-its use for to give behaviour of html tag.
+
+-same like java lang
+
+-variable declaration
+-method write---->function 
+---------------------------------
+ex.addition of 2 nos.
+
+12  + 5= 17 
+
+void m1(){
+int a12+5;
+
+}
+
+function m1(int t){
+	int a=12;
+	int b=5;
+	int c=a+b;
+
+}
+
+--------------------
+<script>   
+
+function m1(int t){
+	int a=12;
+	int b=5;
+	int c=a+b;
+console.log("this console" +c );
+alert("this is alert");
+document.write("this is document write");
+
+}
+ </script>
+-------------------------------------------------------
+ <button onclick="m1();" > Add </a></button>
+
+console.log("this console");---------------------->print statement
+alert("this is alert");---------------------->print statement with open new window
+document.write("this is document write");---------------------->print statement
+
+<script src="path location">
+--->filename.js
+
+------------------------------------------------------------------------------------------
+9-9-2024
+==========
+Java Project
+-store data into database-
+
+Step for creata java Project 
+------------------
+-create web page
+-create table in database
+-download tomcat server
+-create one web-info folder---lib folder--paste mysql connector file
+-create jsp page
+-in form tag link jsp file(action ="jspfilename.jsp")
+-connectivity in Database in jsp page
+-run web page on browser 
+
+----------------------------------------
+
+create table EmpRegistration (srno int(10)primary key,emp_name varchar(50), 
+emp_address varchar(100),emp_DOB varchar(20),emp_gender varchar(10),
+ emp_loginId varchar(50),emp_password varchar(50)  );
+
+---------------
+
+create table EmpRegistration (emp_name varchar(50), 
+emp_address varchar(100),emp_DOB varchar(20),emp_gender varchar(10),
+ emp_loginId varchar(50),emp_password varchar(50)  );
+
+
+
+date data type use ------------>yyyy/mm/dd
+date string type use------------->dd/mm/yyyy
+---------------------------------------------------------------------
+10-9-2024
+==========
+-Download tomcat server-->install---run server
+-Jsp--java Server page----------->its use for to run web page
+
+java file-----compile-------> .java------------->.class
+
+
+-->to write front end design  in single page with write backend code also.
+---create jsp page------->filename.jsp
+
+----->html,css,js----we can write this all type lang code
+
+----->jsp lang help to write java code using some tags.
+
+syntax:
+
+<%     value %>------------------>Scriplet tag
+<%@ int a=33;    %>
+
+-----------------------------------------------------------------------------------------
+11-9-2024
+===========
+-start tomcat server--->from tomcat folder---->Tomcat9  run
+-go to browser --->run URL  with ---------->  localhost:4343     (port no)
+ex.---->  localhost:4343/JavaProject/home.html -------------->after webapps folder
+-execute all operation----form submit
+--give sccessfull msg
+--check data store or not in database.
+
+-------------------------------------------------------------------------------------------------------
+13-9-2024
+==========
+
+update Student  () ;
+
+update Student set address="Pune"  where rollno=2  ;
+
+
+---------------------------------------------------------------------------------------
+14-9-2024
+============
+
+
+table query
+-----------
+
+create table
+delete table with data---------> drop table tableName;
+rename table---------> rename table oldtablename to newtablename;
+truncate and delete table------------->
+
+delete from tablename;
+delete from tablename  where stname="anil"  and rollNo=1;----------------> not delete permanently
+
+truncate table tablename;---------------->permanent delete all records
+
+Alter query----->delete column,add column,modify column data type,column name change.
+
+alter table  FirstYear add(address varchar (12),state varchar(22));
+
+alter table  FirstYear  drop state,address;
+
+alter table  FirstYear rename address  to addr ;
+
+
+DB----->Table-------->Column
+
+create database College;
+drop database College;
+
+create database College;
+rename database oldDB   to newDBname;
+
+use College;
+
+create table FirsYear (rollno int (1),  name varchar(23) );
+
+Rename table FirsYear to FirstYear;
+
+drop table FirstYear;
+
+
+truncate  table FirstYear where rollno=5;
+delete  from  FirstYear where rollno=5;
+-----------------
+
+alter table FirstYear add(address varchar (30) );
+
+-----------------------------------------------------------------------------
+16-9-2024
+===========
+
+insert data
+-------------
+
+insert into tableName (rollno,name)  values (12,"ABC");
+
+
+insert into tableName values (12,"ABC");
+
+
+insert into tableName (rollno,name)  values (12,"ABC"),(12,"ABC")  , (12,"ABC") ;
+
+---------------------------------------------------------
+
+update data
+--------------
+
+update tableName set address="hyd" ,adhar=23445555,dist="" ;
+
+---------------------------------------------------------------------
+select Query
+---------------
+
+select   * or mathimatic operation or alieas or column name   from   TableName;
+
+
+select   * or mathimatic operation or alieas or column name   from   TableName;
+
+
+select * from tableName;
+
+select rollno, phoneNo from Student;
+
+
+select rollno as R_No, phoneNo as P_No from Student;
+
+select 34+5 from student;
+
+table --200 record --
+select * from tableName limit 5;
+
+
+select * from tableName where name="Anita"    order by rollno desc  ;
+-------------------------------------------------------------------------------
+distinct keyword
+
+Aggrigate Function-->-max,min,count,avg,sum
+--------------------------------------------------
+select distinct columnName from tableName;
+
+select distinct name from student;
+
+----------------------------------------
+
+select min(rollno) from student;
+
+select max(rollno) from student;
+
+select sum(rollno) from student;
+
+select avg(rollno) from student;
+
+select count(rollno) from student;
+---------------------------------------------------
+rename database d1 to  d2;
+
+rename table table1  to table2;
+
+alter table table1 rename column1 to column2;
+--------------------------------------------------------------------------------------
+17-9-2024
+==========
+Revised HTML Tag
+
+
+<table border>
+<tr>
+<th>  RollNO </th>
+<th>  Name</th>
+</tr>
+
+<tr>
+<td>  1  </td>
+<td>  Anil  </td>
+</tr>
+
+<tr>
+
+<td>  2  </td>
+<td>  Nitesh</td>
+</tr>
+
+</table>
+------------------------------------------
+18-9-2024
+===========
+
+Array
+String
+Exception
+Encapsulation
+wrapper class
+polymorphism
+---------------------------------
+
+Array 
+---
+
+-Array is store value in signle variable,but only similar type value.
+-to store multiple value into one variable
+-Array is fixed size.
+
+type of array
+
+-one dimensional array  Single dimensional 
+-multiDemensional array
+
+[] 
+
+[] [] 
+
+-----------------------------------
+
+syntax:
+---
+
+data type variable [] = {value1,value2....};
+
+
+ex.
+//Initialize value to array
+//one diensional
+int a[] = {12,34,57,8,33};
+
+String name ={"Abc","XYZ"};
+int [] a={44.55,7,12};
+
+
+int a[] = new int[6];     //{12,34,57,8,33,88};
+a[0]  = 45;
+a[1]  =89;
+
+
+// multidiensional
+int a[] [] = { {12,34,57,8,33}, {12,34,57,8,33}, {12,34,57,8,33},{12,34,57,8,33}  };
+
+
+
+Example:
+1)find duplicate value 
+2)print all value using for loop,while
+3)find out length of given string 
+4) print value in asending order desending ...
+int a[] = {12,34,57,8,33};
+
+for(int i=0 ;i< a.length  ; i++ ){
+ sop(a[i])   /// 12, 34,57.....
+}
+
+for(int temp :  a){
+sop(temp)
+
+}
+
+
+
+a.length   -----> 5
+
+a.sort()
+
+
+int a[] = {12,34,57,8,33};
+
+int temp=0;
+
+for(){
+}
+
+
+///multidemensional Array
+
+int a[] [] ={  {34,788,82,1},{},{},{}  };
+
+1 3  3
+2 3  6
+3 4  8
+
+1 3  3
+2 3  6
+3 4  8
+------------------------------------------------------------------
+19-9-2024
+===========
+
+
+int a = 34;
+
+int b =33;
+
+equals method 
+Studen obj =new Student("ABC");
+
+Studen obj1 =new Student("ABC");
+
+if(a == b)
+
+1)Duplicate value from array
+
+
+int a[]={12,4,4,2,6,77,88,12,90};
+
+int c=0;   //2
+
+for(int i=0;i<a.length;i++){
+
+for(int j=i+1;j<a.length;j++){
+
+	if(a[i] == a[j]){
+		sop(a[j])   ///12 ,4
+		c++;
+	}
+
+}
+}
+
+sop("count no ="+c)
+
+-----------------------------------------------
+2)Asending order Array list
+
+int a[]={4,5,1,88,22,41,98,18};
+
+//use predefined method..i.e sort method
+
+
+Arrays.sort(a);
+
+for(int temp : a){
+sop(temp)
+}
+
+
+//use own logic
+---------------------------------------------
+
+MultiDimensional Array
+
+--its use for matrices
+--its in the form of row column
+
+syntax:
+
+int a[][] ={ {3,5,7,9,1,2}, {5,42,1,12,46}  };
+
+for(int i=0;i<a.length;i++){
+   for(int j=i+1;j<a.length;j++){
+	sop(a[i][j])   // a[i]   a[][]
+				
+   }
+}
+
+----------------------------------------------
+String Class
+----------
+
+Object----->class
+String ----->class
+
+java.lang
+
+equals()
+
+
+------------------
+String a="ABC";
+
+
+-toUpperCase();
+-toLowerCase();
+-substring(1,3)
+-contains("a")
+-replace("AB","DF")   //DFC
+-indexOf("t")   //2
+-charAt(2)    //C
+-length()----->size   //3
+-trim()
+-startswith("a")
+-endswith("a")
+-cancat(2ndVariableName)
+
+a.trim();
+a.cancat(b);
+------------------------
+StringBuffer     and    StringBuilder
+
+StringBuffer obj = new StringBuffer("ABC");---->a.append(b),   a.revense()
+
+String a="ABC";
+String obj =new String("ABC");
+-------------------------------------------------------------------------
+24-9-2024
+==========
+
+Show List on UI:
+----------------
+
+1)UI-web page
+2)Connection with DataBase---->use Select query
+3)Tomcat Server start
+4)create one web-inf folder---lib folder--paste mysql connector file
+5)create jsp page----->in form tag link jsp file(action ="jspfilename.jsp")
+6)run web page on browser 
+---------------------------------------------------------------------------------------------
+25-9-2024
+==========
+
+JSP file---->html,css js code in thhis file.
+->only create one jsp file
+
+Run file URL
+
+-http://localhost:4343/JavaProject-ShowData/home.jsp
+--------------------------
+<% int data=50; %>  -------------------->Scriptlet tag
+
+
+<%! int data=50; %>  ------------------>Declaration tag
+<%= "Value of the variable is:"+data %>  ----------------->expression tag
+-------------------------------------------------
+27-9-2024
+===========
+
+In JS
+
+var ,let const---------------> data type 
+
+var a=34;
+var a="ABC";
+a=111;
+
+
+let a=344;
+a=2222;
+-------------------------------------------------------------------------------------------
+28-9-2024
+==============
+Delete record from Screen
+
+-add one button in last column
+-write one function to jump another jsp  file(delete.jsp)
+-write Delete code in delete.jsp file
+
+------------------------------------------
+<script>
+		function deleteRecord(empLoginID){
+			
+			let result = confirm("Do you want to delete this record?");
+			
+			if (result) {
+				// Set the hidden input value to empLoginID (just in case)
+				document.getElementById("deleteId").value = empLoginID;
+				
+				// Submit the form programmatically
+				document.getElementById("deleteForm").submit();
+				//window.location.reload();
+			}else{
+					
+			}
+		}
+	</script>
+-------------------------------------
+
+<%@ page import = "java.sql.*"  %>
+
+<script>
+	 window.location.href = "http://localhost:4343/JavaProject-ShowData/home.jsp";		
+</script>
+
+<%  
+ String empLoginID = request.getParameter("deleteId");
+			
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/emp","root","root");
+		
+		Statement st =con.createStatement();
+		String query="delete from empregistration where emp_loginid='" + empLoginID + "' ";
+			
+		st.executeUpdate(query);  
+	//	out.println("<h1>Record is Deleted </h1>");
+		
+		con.close();
+%>
+-------------------------------------------------------------------------------
+CRUD Operation
+--------
+C-Create Data   or Save Data
+R-Read Data  or Show Data
+U-Update Data  or modify Data
+D-Delete Data  
+-------------------------------------------
+Update Data from UI  -Screen
+------------
+
+-cretae one button edit
+-Redirect to save page
+-write Update logic in jsp page--create one jsp page
+
+------------------------
+function editRecord(empLoginID){
+	document.getElementById("editForm").submit();
+			
+		}
+------------------------------------------------
+3-10-2024
+==========
+
+Git 
+----
+
+-its software to manage aur project.
+-stage,master branch   ----->
+ex. JavaProject branch 
+-5 task 
+
+
+-git init
+-git checkout branchname
+
+pull 
+push 
+
+-Login Git Account--
+-----------
+---new Repostorty
+--Project name ------create repostory
+--add file----choose file--commit file(commit changes)
+---open project folder ---go to setting ----->pages
+--select branch---->click on save button
+---->it sgenerate Project Link
+
+--copy that link open your project anywhere....
+
+-----------------------------------------------------------------------------
+18-10-2024
+===========
+
+Mysql query
+FrontEnd:  HTML,CSS
+Java -core java,jsp page,JDBC Connectivity
+
+Connectivity with front page---using Jsp and DB
+(CRUD Operation)
+
+<%     java code    %>
+
+------>Java Script  Lang
+
+create,alter ,truncate ,delete ,update,  order by ,limit,drop, insert ,where 
+
+count,avg,min,max
+
+-----------------------------------------------
+CSS-----Cascading Style Sheet
+
+Html   structure ------>css----->style 
+
+3 way 
+
+
+1)Inline css 
+2)Internal Css
+3)External  Css   
+
+<html>
+
+
+<body style="" >
+
+<p style="propertyName : value ; propertyName : value ;   " >
+
+
+<p style="font-size : 34" >
+
+
+<p>
+
+
+</body>
+</html>
+-------------------------------------------------------------
+2) Internal Css
+
+--to apply sytle to all page
+---DrawBack--->code length is more,slow execution
+
+Syntax:
+
+<style>  tagName{propertyName  :    value ; propertyName  :    value ;   }        </style>
+
+
+<html>
+<head>
+<title>this css </title>
+
+<style>  p{font-size  :    33; propertyName  :    value ;   }   
+	 body{font-size  :    33; propertyName  :    value ;   } 
+	p{font-size  :    33; propertyName  :    value ;   } 
+#firstName{background-color : red;}
+
+     </style>
+
+
+</head>
+<body style="" >
+
+<p style="font-size : 34" >
+
+
+<p>
+
+
+</body>
+</html>
+---------------------------------------------
+3)External Css 
+
+---to write  all css code in separate file
+--->filename.css     extension
+----->create new file with .css extension and save it
+
+href="HtmlCss\newEx.css ">   
+1)Create new css file
+2) link with html code
+
+<link>  tag
+
+<head>
+
+<link rel href="path ">
+<link rel  href="HtmlCss\newEx.css ">
+</head>
+
+
+<>
+
+
+p{text-align : "center";   }
+
+
+------------------------
+css selector
+1) Id selector
+
+-->create field with id  name(id attibute)
+--> use #idName{properyName  :  value}
+
+
+<input type="text"  id="surName">
+
+-------------------------------------------------------------------------
+22-10-2024
+============
+
+Array of student
+
+chem,phy,math
+
+
+-------------------------------------------
+Decrypt the sentence from the encrypted ASCII Values given:
+1. 73 65 77 A 83 84 85 68 69 78 84
+2. 87 69 76 69 65 82 78 67 79 68 73 78 71
+3. 74 65 86 65 74 83 65 76 65 78 71 85 65 71 69
+
+
+73--------Ascii
+
+
+A-----65
+B----66
+
+
+a--->
+
+----------------------
+num  to  char
+----------
+int num=73;
+
+char c=  (char)  num;   ////ascii
+
+print(c)//////A   a
+
+---------------------------
+char to num
+
+D
+
+char c='D';
+
+int a=  (int)  c;
+
+print(a)
+----------------------------------------------------------------
+28-10-2024
+===========
+Collection
+Exception Handling
+package
+oops concept-inheritance,poly,encap,abstraction
+interface
+io stream
+Array
+String class
+
+
+
+---------------------
+2sem-----
+---------
+Exception Handling
+Array--------->no
+Class and Object------>no
+Constructor--------->
+method----->no
+wrapper
+java library
+String 
+String manupulation--sort  and searching
+
+
+
+------------------------------
+
+--------------------------------------------------------------------------
+
+package
+io stream
+collection
+Multithreading
+---------------------------
+HTML
+CSS
+JS
+REACT JS-      -------React Native---mobile application
+Angular Framework---->
+
+--------------------------------------------------------------------------
+Stream APi
+Lambda Expresion
+Optional class
+Method Reference
+-----------------------------------------------------------------------------------------
+package
+
+-----its collection of class or interface.
+
+type of package
+
+1)predefined package
+
+2)user package
+
+
+ex .   java.util;
+
+
+package p1;
+
+class Add {
+
+void add(){
+
+int c=23+55;
+sop(c);
+
+}
+
+}
+
+
+import java.p1;
+
+
+class Ex{
+
+
+psvm(){
+
+Add obj=new Add();//
+obj.add();
+
+}
+}
+-------------------------------
+
+javac -d . fileName.java  
+
+java  p1.A
+
+
+
+Add1  -------------------    Add2------class--------------same ------add()
+----------------------------------------------------------
+
+Collection
+------------------
+
+int no
+String name -----Store----collection----Object-----
+-----------------------------------------------------------------------------------------
+29-10-2024
+============
+
+Collection
+
+List-----ArrayList,LinkedList ,
+Set-------->
+Queue
+----------------------------------------------------------------------------------------
+
+int a[]={44,77,666]
+
+int b[]={33,888,11};
+
+int c[]= new int[10];  
+
+
+
+for(int i=0){
+
+c[]=a[i]+b[i]
+}
+
+
+for()
+sop(c[])
+-------------------------------------------------------------------
+30-10-2024
+============
+
+Collection
+
+List-----ArrayList,LinkedList ,
+Set-------->
+Queue
+
+Set Interface
+-----------------
+-duplicate not allow
+-same and diff data type value
+-null value insert only one time
+-randomly value prints
+
+--class
+
+----HashSet
+----LinkedHashSet
+
+
+
+
+class A{
+
+psvm(){
+
+HashSet obj=new HashSet();
+
+obj.add(23);
+obj.add("ABC");
+
+  for (Object element : obj) {
+      
+      System.out.println(element);
+   
+     }
+
+
+    List <Object>  res  =new <Object>HashSet();
+
+ System.out.println("==================================");
+   
+   for(int i=0;i<=res.size();i++){
+	 //  Object o =res.get(i);
+	 //  System.out.println(o);
+   }
+
+
+
+
+HashSet<String> obj1 =new <String>HashSet();
+obj1.add(22);
+
+}
+
+}
+
+}
+-------------------------------------------------------------------------
+
+Queue Interface
+
+--diff datatype value store
+-null values not insert
+
+----PriorityQueue   class
+
+
+--------------------------------------------------
+18-11-2024
+===========
+Exception Handling
+Array--------->no
+Class and Object------>no
+Constructor--------->no
+method----->no
+wrapper
+java library 
+---------------------
+String 
+String manupulation--sort  and searching
+--[1,2,3,4,5]
+--searching---Linear search,,binary search
+--Sorting---- selection sort,insertion sort,buble sort,merge sort
+
+-----------------------------------------------------------------------
+Exception Handling
+------------------
+
+Throwable---------super class
+
+Exception ----child class----
+
+
+---Advg
+-system execute properly
+-user define msg
+
+
+--try,catch,finally,
+---throws ,throw
+
+try{
+
+
+
+}catch(Exceltion e){
+sop();
+
+}finally{
+
+}
+---------------------------------------------
+
+throws  keyword
+-------------------
+syntax:
+
+void m1() throws Excetion{
+
+try{
+
+}
+
+int c=12+4;
+sop(c);
+
+}
+
+------------------------------------------------
+throw  keyword
+-------------------
+-custom exception 
+
+syntax:
+
+void m1(){
+
+throw new Exception("msg");
+
+}
+---------------------------------------------------------------------------------
+Array
+--------------
+-multiple value store into single var
+-its fixed size to store value
+-  
+
+type of Array
+
+1one demension
+2)multi dems
+
+
+int a[]={12,4,67,77,1};
+
+
+int a[][]={ {1,2},{3,4}      };
+---------------------------------------------------------------------------------------------
+19-11-2024
+===========
+
+sortedSet--Interface
+
+----TreeSet--class
+
+
+--->it store only type of data.
+-----------------------------------------------
+Map    ---Interface     
+
+----HashMap,LinkedHashMap,TreeMap------class
+
+---put method
+Map obj=new HashMap();
+
+
+Ex.
+
+
+LinkedHashMap obj= new LinkedHashMap();
+
+obj.put(1,"Arohi");
+
+obj.put("surname","padole");
+
+----size()  method
+
+----Print value to  getKey()     ,,,getValue()
+
+Map.EntitySet
+
+
+for(Map.Entry  m :   obj.entrySet()){
+sop(m.getKey()    +     m.getValue() )      //name      Arohi   //surname   padole 
+}
+
+
+sop(obj)
+--------------------------------------------
+
+
+LinkedHashMap<String, String> obj= new LinkedHashMap <String, String>();
+
+
+obj.put("name","Arohi");
+
+
+obj.put("surname","padole");
+
+
+
+
+for(Map.Entry a :  obj.entrySet()  ){
+ 
+ 
+  System.out.println("key = "+a.getKey()  +"   value ="+a.getValue());
+
+}
+
+-----------------------------------------
+
+[2,4,677,88]
+
+
+value  =   1
+value = 2
+
+
+for(Object o :obj){
+
+}
+------------------------------------------------------------------------------------------------
+21-11-2024
+===========
+String 
+
+
+s="Name"
+
+p="emaN"
+rev=rev+charAt(i)
+
+----------------------------------------------------------------------------------------
+25-11-2024
+===========
+searching---Linear search,,binary search
+-------------------
+
+int a[]={12,4,3,1,88,55,33};
+
+DSA --Data Structure Algorithm
+
+1)Linear Search
+
+int a[]={12,4,3,1,33,88,55,33};
+
+boolean isFound= false;
+		for(int i= 0;i< array.length;i++){
+			if(array[i] == searchValue){
+				
+				System.out.println("Searching value at index = "+i);
+				isFound=true;
+				break;	
+			}
+		}		
+		if (! isFound) {
+			System.out.println("Searching value is not present = " + searchValue);
+		}
+---------------------------------------------------------------------------------------------------
+26-11-2024
+=============
+Binary Search
+---------
+
+int a[]={12,4,3,1,88,55,33};
+
+low index=0;   //0
+high index = a.length - 1;  //5 
+
+mid index =  low +  (high - low  / 2);    ///  0+ (5-0)/2===   5/2  ==2.5   ==3
+
+
+------------------------------------------------------------------------------------------
+27-11-2024
+=============
+Sorting
+------
+
+-Buble sort 
+-Selection sort
+--------------------------
+-Buble sort
+
+--to compare 2 digit,arrage small no first
+
+//int a[]={12,4,3,1,88,55,33};
+Output:----1,3,4,12,33,55,88
+
+Step 1)
+1)4,12,3,1,88,55,33
+2)4, 3,12,1,88,55,33
+3)4,3,1,12,88,55,33
+4)4,3,1,12,55,88,33
+5)4,3,1,12,55,33,88
+
+Step 2)
+1)3,4,1,12,55,33,88
+2)3,1,4,12,55,33,88
+3)3,1,4,12,33,55,88
+
+step 3)
+1)1,3,4,12,33,55,88
+
+------------------------------------------------------------------
+-Selection sort
+
+//int a[]={12,4,3,1,88,55,33};
+Output:----1,3,4,12,33,55,88
+
+---check 1st no with others no which is smallest
+----2nd no small then swap the nos
+
+step 1)  1,4,3,12,88,55,33 
+step 2) 1,3,4,12,88,55,33
+step 3)  1,3,4,12,33,55,88
+-------------------------------------------------------------------------------------------------
+28-11-2024
+==============
+
+Linear Search 
+-------------
+
+//int a[]={12,4,3,1,88,55,33};
+
+
+for(int i= 0 ;i<a.length;i++){
+
+if(a[i] == 55 ){
+sop("no  is found at index =  "+i);
+break;
+}
+
+}
+------------------------------------------------
+
+Binary Search
+----------------
+
+//int a[]={12,4,3,1,88,55,33};
+
+int startpoint = 0;
+int endPoint = a.length - 1;
+
+for(int i= 0 ;i<a.length;i++){
+
+int midPoint =  startPoint + (endPoint - startpoint / 2);   0+ 7-0/2===0 + 7/2=3.5    
+
+if( a[midPoint] == 55 ){
+sop("no is found at index="+midPoint);
+break;
+}
+
+
+//int a[]={12,4,3,1,88,55,33};      //mid= 1  search =3------------>step 1
+				   //mid=3    2
+
+if(a[midPoint]  < searchNo){   55 < 1
+
+startPoint =   midPoint + 1; 
+
+}
+
+
+if(a[midPoint]  >  searchNO){
+endPoint =  midPoint - 1;
+}
+
+}
+-------------------------------------------------------------------------------
+Buble sort
+
+a[]={12,4,3,1,88,55,33};  //
+
+step 1) 4,12,3,1,88,55,33
+2) 4, 3,12,  1,88,55,33
+3)4,3, 1,12, 88,55,33
+
+------------------------------------------------------------------
+Selection Sort
+a[]={12,4,3,1,88,55,33};  
+
+step 1) 1 4,3,12, 88,55,33
+ 
+
+--------------------------------------------------------------------------------------------
+30-11-2024
+============
+
+StringBuffer
+
+StringBuilder  s =new StringBuilder(4);
+-------------------------------------------------------------------------------------------------
+3-12-2024
+=============
+
+IO Stream -file --Input Output Handling Concept
+------------
+
+
+1)create file or create folders
+2)write some data into text file  or excel file
+3)read data from text file or excel file
+
+File ,FileWriter,FileReader 
+Step:
+1)import java.io;
+2)create file class Object
+File obj1 =new File("p2.xlsx");
+3)file create----createNewFile() with help of obj
+4)folder create-----------mkdir()   with help of obj
+
+File class with to give file name with extension
+
+----------------------------------------------------
+
+var---store---file
+---FileWriter,BufferedWriter,PrintWriter----------> predefine class
+
+---write()
+---read()
+-----------------------------------------------------------------------------------------
+5-12-2024
+==========
+
+read()  
+----->FileReader ,BufferedReader
+
+ FileReader fr =new FileReader("p2.txt");  
+		String a="";
+		System.out.println("Read data"+fr.read());	 
+          int i;    
+          while((i=fr.read())!=-1)   
+          System.out.println((char)i);   
+		
+----------------------------------------------------------------------------------------------------
+6-12-2024
+===========
+ex.
+1)given a="ramesh chandan Kale"
+
+System.out.println("First= "+Character.toUpperCase(arr[0].charAt(0))+" " +Character.toUpperCase(arr[1].charAt(0)) 
+		+" " +Character.toUpperCase(arr[2].charAt(0)) 
+		+arr[2].substring(1).toLowerCase() ); 
+
+			//System.out.println("First= "+n);
+				
+		for(String temp : arr){
+			System.out.println("new String="+Character.toUpperCase(temp.charAt(0)) + temp.substring(1).toLowerCase()  );
+		
+		}
+----------------------------------------------------------------------------------------------------
+17-12-2024
+=============
+Java 1.8 features
+--Lamba Expression
+--Method References
+--Stream API
+--Optional class
+--Functional Interface
+--default Method in interface
+--static method in intetface 
+
+
+
+Spring Project
+Java Script
+-----------
+--------------------------------
+
+-default Method in interface
+--static method in intetface 
+
+
+---Interface 
+
+interface Add
+{
+
+int i=5;
+void m1();
+
+default void m2(){
+sop("Iam m2");
+}
+
+
+static void m3(){
+sop("Iam m3");
+}
+
+
+}
+
+class A implements Add{
+
+void m1(){
+sop{"Iam m1"};
+}
+
+
+ void m2(){
+sop("Iam Overide ");
+}
+    
+
+psvm(){
+A obj = new A();
+obj.m2();   //default method
+
+obj.m3();
+Add.m3();  //static method calling 
+
+}
+
+
+}
+
+
+
+default method ----super keyword used
+ TestInterface1.super.show(); 
+
+
+
+static method ----super keyword used
+ TestInterface1.show(); 
+
+
+----------------------------------------------------------------------------------------------------
+3-1-2025
+===========
+
+Searching 
+Exception handling 
+String class
+sorting
+---------------------------------------------------------------
+Searching
+--------------
+
+
+psvm(){
+
+int a[]={2,4,5,6,4};
+
+A obj =new A();
+
+
+//logic   
+
+}
+
+
+
+static void m1(int []new,searchElement ){
+
+
+
+}
+-------------------------------------------------------------------------------------------------
+10-1-2025
+==========
+
+throw keyword------>custom exception msg
+
+In side method
+
+
+
+void m1(){
+throw new Exception("enter valid input");
+
+}
+
+NullPointerException-----class---
+ArrayIndexOfBound----class---
+
+
+throws  ---------method level to check exception
+
+
+void m1(int a,int b) throws Exception{
+logic
+
+
+}
+
+
+String a="abcd";
+
+length
+replace
+subString()
+contains("abc")
+
+
+charAt(2)------char return
+indexOf("a")----index no return
+startsWith("a")-----------false  return
+endsWith('a')
+
+
+
+---------------
+Polymorphism
+
+-method overloading--------same method,but diff parameter---data type diff, diff no of data type
+
+void m1(int a){
+
+}
+
+void m1(float a){
+
+}
+
+--only one class
+
+
+--method overriding-----same method,same paramater,same return
+
+---create 2 class atleast
+
+class A{
+int m1(int a){
+
+}
+
+}
+
+class B{
+float m1(int a){
+
+}
+
+}
+
+
+class C {
+psvm(){
+
+}
+
+}
+
+}
+
+---------------------------
+wrapper class---to convert primitive data type to object data type
+
+int,long ,float ----primitive
+Integer,Float,Boolean   
+
+int a=2;
+
+Integer o = Integer.valueOf(a);
+
+
+String 
+
+
+int c= a.intValue();-----//AutoUnboxing  
+--------------------------------------------------------
+Arrays
+--------------------------------------------------------------------------------------------------
+17-1-2025
+==============
+
+int max,min;
+
+for(){
+
+
+if(){}
+
+
+}
+
+}
+
+------
+DataType
+Type casting
+Interface vs Abstract Class
+Inheritance
+
+Constructor
+Arrays
+String Class
+Sorting
+Searching
+
+Encapsulation
+Access Modifier
+break ,continue
+for loop ex
+basic ex--fabbica series,factorical,max,min no,sum of no,,reverse string .
+
+-------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
